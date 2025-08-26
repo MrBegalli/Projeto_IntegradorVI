@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Trunfo de Carros</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 20px; }
+    .card { background: white; padding: 15px; border-radius: 8px; 
+            box-shadow: 0 2px 6px rgba(0,0,0,.2); margin: 10px; width: 250px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 10px; }
+    button { margin: 10px 0; padding: 10px 15px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Super Trunfo de Carros</h1>
+  <button onclick="loadDeck()">Carregar Baralho</button>
+  <div id="deck" class="cards"></div>
+
+  <script>
+    async function loadDeck() {
+      const res = await fetch("http://localhost:3001/api/deck");
+      const data = await res.json();
+      const deckDiv = document.getElementById("deck");
+      deckDiv.innerHTML = "";
+
+      data.forEach(c => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <h2>${c.nome}</h2>
+          <p><b>País:</b> ${c.pais}</p>
+          <p><b>Velocidade:</b> ${c.velocidade} km/h</p>
+          <p><b>Resistência:</b> ${c.resistencia}</p>
+          <p><b>Motor:</b> ${c.motor} cv</p>
+          <p><b>Preço:</b> R$ ${c.preco.toLocaleString("pt-BR")}</p>
+        `;
+        deckDiv.appendChild(card);
+      });
+    }
+    
+  </script>
+</body>
+</html>
