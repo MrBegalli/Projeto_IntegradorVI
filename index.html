@@ -1,43 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Super Trunfo de Carros</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 20px; }
-    .card { background: white; padding: 15px; border-radius: 8px; 
-            box-shadow: 0 2px 6px rgba(0,0,0,.2); margin: 10px; width: 250px; }
-    .cards { display: flex; flex-wrap: wrap; gap: 10px; }
-    button { margin: 10px 0; padding: 10px 15px; cursor: pointer; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo Retro</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Super Trunfo de Carros</h1>
-  <button onclick="loadDeck()">Carregar Baralho</button>
-  <div id="deck" class="cards"></div>
+<body class="bg-black text-white min-h-screen flex flex-col items-center p-4">
 
-  <script>
-    async function loadDeck() {
-      const res = await fetch("http://localhost:3001/api/deck");
-      const data = await res.json();
-      const deckDiv = document.getElementById("deck");
-      deckDiv.innerHTML = "";
+    <div class="text-center mb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-red-600 mb-2" style="font-family: 'Press Start 2P', cursive; text-shadow: 2px 2px #000;">SUPER TRUNFO RETRO</h1>
+        <p id="gameStatus" class="text-sm text-green-400">Analise o baralho e clique em "Começar Jogo" para iniciar!</p>
+        <button id="startGameBtn" class="mt-4 px-6 py-3">Começar Jogo</button>
+    </div>
 
-      data.forEach(c => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <h2>${c.nome}</h2>
-          <p><b>País:</b> ${c.pais}</p>
-          <p><b>Velocidade:</b> ${c.velocidade} km/h</p>
-          <p><b>Resistência:</b> ${c.resistencia}</p>
-          <p><b>Motor:</b> ${c.motor} cv</p>
-          <p><b>Preço:</b> R$ ${c.preco.toLocaleString("pt-BR")}</p>
-        `;
-        deckDiv.appendChild(card);
-      });
-    }
+    <!-- Container para a visualização de todas as cartas -->
+    <div id="fullDeckContainer" class="flex flex-col items-center">
+        <h2 class="text-xl mb-4">BARALHO COMPLETO</h2>
+        <div id="fullDeckGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-center">
+            <!-- Cartas renderizadas pelo JS -->
+        </div>
+    </div>
     
-  </script>
+    <!-- Container principal do jogo -->
+    <div id="gameContainer" class="hidden w-full flex flex-col items-center">
+        <!-- Placar -->
+        <div class="flex justify-around w-full max-w-2xl mb-6">
+            <div class="score-box">
+                <p class="text-sm">VOCÊ</p>
+                <span id="playerScore" class="text-2xl text-green-500 font-bold">0</span>
+                <p class="text-xs">Cartas: <span id="playerDeckCount">0</span></p>
+            </div>
+            <div class="score-box">
+                <p class="text-sm">IA</p>
+                <span id="aiScore" class="text-2xl text-red-500 font-bold">0</span>
+                <p class="text-xs">Cartas: <span id="aiDeckCount">0</span></p>
+            </div>
+        </div>
+
+        <!-- Resultado da rodada -->
+        <div id="resultMessage" class="text-center text-lg md:text-xl font-bold mb-4" style="min-height: 2rem;"></div>
+
+        <!-- Cartas -->
+        <div class="w-full flex justify-center flex-wrap">
+            <!-- Carta do Jogador -->
+            <div id="playerCardContainer" class="card-container">
+                <div id="playerCard" class="flip-card">
+                    <!-- Verso -->
+                    <div class="card-back absolute inset-0 p-6 flex flex-col items-center justify-center">
+                        <h2 class="text-lg font-bold text-green-400">JOGADOR</h2>
+                        <div class="text-gray-400 mt-4 text-center">Clique em "Começar Jogo"</div>
+                    </div>
+                    <!-- Frente -->
+                    <div class="card-front absolute inset-0 p-6 flex flex-col items-center">
+                        <h2 class="text-sm font-bold text-red-400 mb-2" id="playerCardName">Nome do Carro</h2>
+                        <img id="playerCardImage" src="https://placehold.co/200x120/000000/FF0000?text=Carro" alt="Imagem do seu carro" class="mb-4" style="image-rendering: pixelated;">
+                        <ul class="w-full text-left space-y-2 text-green-400 text-xs" id="playerAttributes"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carta da IA -->
+            <div id="aiCardContainer" class="card-container">
+                <div id="aiCard" class="flip-card">
+                    <!-- Verso -->
+                    <div class="card-back absolute inset-0 p-6 flex flex-col items-center justify-center">
+                        <h2 class="text-lg font-bold text-red-400">IA</h2>
+                        <div class="text-gray-400 mt-4 text-center">Clique em \"Começar Jogo\"</div>
+                    </div>
+                    <!-- Frente (preenchida só ao revelar) -->
+                    <div class="card-front absolute inset-0 p-6 flex flex-col items-center">
+                        <h2 class="text-sm font-bold text-red-400 mb-2" id="aiCardName">?</h2>
+                        <img id="aiCardImage" src="https://placehold.co/200x120/000000/FF0000?text=???" alt="Imagem da IA" class="mb-4" style="image-rendering: pixelated;">
+                        <ul class="w-full text-left space-y-2 text-green-400 text-xs">
+                             <li class="attribute-item text-green-400" id="aiVelocidade">VELOCIDADE: <span class="font-semibold">?</span></li>
+                             <li class="attribute-item text-green-400" id="aiResistencia">RESISTÊNCIA: <span class="font-semibold">?</span></li>
+                             <li class="attribute-item text-green-400" id="aiMotor">MOTOR: <span class="font-semibold">?</span></li>
+                             <li class="attribute-item text-green-400" id="aiPreco">PREÇO: <span class="font-semibold">?</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
