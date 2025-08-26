@@ -1,5 +1,7 @@
 # SuperTrunfo IA - Projeto de Faculdade
 
+!!ALTERAÇÕES AINDA SERÃO REALIZADAS TANTO NO PROJETO QUANTO NA DESCRIÇÃO!!
+
 ## Descrição do Projeto
 
 Este projeto é uma implementação de um jogo de SuperTrunfo com suporte a **Inteligência Artificial**. O bot pode jogar em três níveis de dificuldade:
@@ -85,6 +87,7 @@ python main.py
 * Permitir multiplayer entre dois humanos ou dois bots.
 * Salvar histórico de partidas e estatísticas de vitória dos bots.
 
-## Autor
+## Autores
 
-Pedro - Projeto de Faculdade
+Pedro Bertochi - Projeto de Faculdade
+Pedro Octávio - Projeto de Faculdade
