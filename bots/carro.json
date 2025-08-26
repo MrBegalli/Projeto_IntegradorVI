@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "RX-7",
+        "brand": "Mazda",
+        "year": 1992,
+        "color": "red",
+        "HP": 255,
+        "torque": 217,
+        "weight": 1300,
+        "0-100": "5.9s",
+        "top_speed": "250 km/h"
+    },
+    {
+        "name": "Civic Type R",
+        "brand": "Honda",
+        "year": 2020,
+        "color": "blue",
+        "HP": 306,
+        "torque": 295,
+        "weight": 1390,
+        "0-100": "5.4s",
+        "top_speed": "272 km/h"
+    },
+    {
+        "id": 3,
+        "name": "GT-R 34",
+        "brand": "Nissan",
+        "year": 1999,
+        "color": "blue",
+        "HP": 276,
+        "torque": 368,
+        "weight": 1540,
+        "0-100": "5.6s",
+        "top_speed": "280 km/h"
+    }
+]
