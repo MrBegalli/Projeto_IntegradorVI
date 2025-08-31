@@ -24,3 +24,8 @@ class MCTSBot:
                     best_score = score
                     best_card, best_stat = card, stat
         return best_card, best_stat
+
+    def choose_card(self, player_deck, stat):
+        # escolhe a carta com maior valor no stat escolhido
+        best_card = max(self.deck, key=lambda c: (1/c[stat] if stat in ["weight","0-100"] else c[stat]))
+        return best_card

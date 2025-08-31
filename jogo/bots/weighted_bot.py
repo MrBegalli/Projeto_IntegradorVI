@@ -22,3 +22,8 @@ class WeightedBot:
         stat_scores = {stat: self.stat_weights.get(stat,1)*((1/best_card[stat] if stat in ["weight","0-100"] else best_card[stat])) for stat in stats_list}
         best_stat = max(stat_scores, key=stat_scores.get)
         return best_card, best_stat
+
+    def choose_card(self, player_deck, stat):
+        # escolhe a carta com maior valor no stat escolhido
+        best_card = max(self.deck, key=lambda c: (1/c[stat] if stat in ["weight","0-100"] else c[stat]))
+        return best_card

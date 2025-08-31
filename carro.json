@@ -33,5 +33,17 @@
         "weight": 1540,
         "0-100": "5.6s",
         "top_speed": "280 km/h"
+    },
+    {
+        "id": 4,
+        "name": "Supra",
+        "brand": "Toyota",
+        "year": 2020,
+        "color": "white",
+        "HP": 335,
+        "torque": 495,
+        "weight": 1490,
+        "0-100": "4.1s",
+        "top_speed": "250 km/h"
     }
 ]
