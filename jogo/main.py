@@ -1,3 +1,4 @@
+import os
 from deck_loader import load_deck_from_json
 from bots import WeightedBot, MCTSBot, RLBot
 from utils import stats, evaluate
@@ -82,7 +83,13 @@ if __name__ == "__main__":
         bot = WeightedBot(bot_deck)
     elif choice == "2":
         bot = MCTSBot(bot_deck)
+    elif choice == "3":
+        # Carrega o RLBot treinado
+        # O caminho para a Q-table deve ser ajustado se o arquivo for movido
+        Q_FILE_PATH = "./rl_q_table.json"
+        bot = RLBot(bot_deck, qfile=Q_FILE_PATH, epsilon=0.0) # epsilon=0.0 para explotação
     else:
-        bot = RLBot(bot_deck)
+        print("Escolha inválida. Usando Bot Padrão (WeightedBot).")
+        bot = WeightedBot(bot_deck)
 
     play_game(bot, bot_deck, player_deck)
