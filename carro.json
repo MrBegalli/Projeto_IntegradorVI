@@ -12,6 +12,7 @@
         "top_speed": "250 km/h"
     },
     {
+        "id": 2,
         "name": "Civic Type R",
         "brand": "Honda",
         "year": 2020,
@@ -45,5 +46,77 @@
         "weight": 1490,
         "0-100": "4.1s",
         "top_speed": "250 km/h"
+    },
+    {
+        "id": 5,
+        "name": "Mustang GT",
+        "brand": "Ford",
+        "year": 2018,
+        "color": "yellow",
+        "HP": 450,
+        "torque": 556,
+        "weight": 1680,
+        "0-100": "4.3s",
+        "top_speed": "250 km/h"
+    },
+    {
+        "id": 6,
+        "name": "911 Carrera",
+        "brand": "Porsche",
+        "year": 2021,
+        "color": "silver",
+        "HP": 379,
+        "torque": 450,
+        "weight": 1505,
+        "0-100": "4.2s",
+        "top_speed": "293 km/h"
+    },
+    {
+        "id": 7,
+        "name": "M3",
+        "brand": "BMW",
+        "year": 2016,
+        "color": "black",
+        "HP": 425,
+        "torque": 550,
+        "weight": 1585,
+        "0-100": "4.1s",
+        "top_speed": "250 km/h"
+    },
+    {
+        "id": 8,
+        "name": "Aventador",
+        "brand": "Lamborghini",
+        "year": 2019,
+        "color": "orange",
+        "HP": 759,
+        "torque": 720,
+        "weight": 1575,
+        "0-100": "2.8s",
+        "top_speed": "350 km/h"
+    },
+    {
+        "id": 9,
+        "name": "Model S Plaid",
+        "brand": "Tesla",
+        "year": 2022,
+        "color": "white",
+        "HP": 1020,
+        "torque": 1420,
+        "weight": 2162,
+        "0-100": "2.1s",
+        "top_speed": "322 km/h"
+    },
+    {
+        "id": 10,
+        "name": "Impreza WRX STI",
+        "brand": "Subaru",
+        "year": 2015,
+        "color": "blue",
+        "HP": 305,
+        "torque": 393,
+        "weight": 1505,
+        "0-100": "5.2s",
+        "top_speed": "255 km/h"
     }
 ]

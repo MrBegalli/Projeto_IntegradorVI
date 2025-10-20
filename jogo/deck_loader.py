@@ -1,4 +1,5 @@
 import json
+import random
 
 def load_deck_from_json(file_path):
     with open(file_path, "r") as f:
@@ -7,4 +8,5 @@ def load_deck_from_json(file_path):
     for card in deck:
         card["0-100"] = float(str(card["0-100"]).replace("s", "").replace(",", "."))
         card["top_speed"] = float(str(card["top_speed"]).replace(" km/h", ""))
+    random.shuffle(deck)  # Embaralha as cartas
     return deck
