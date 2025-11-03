@@ -1,0 +1,187 @@
+/* Fonte pixelada estilo retro */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #111;
+    color: #f5f5f5;
+    text-shadow: 2px 2px #000;
+}
+
+/* Baralho completo */
+#fullDeckContainer {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.deck-view-card {
+    background-color: #222;
+    border: 4px solid #900;
+    box-shadow: 0 0 10px #600 inset, 4px 4px #000;
+    image-rendering: pixelated;
+    border-radius: 0;
+    padding: 1rem;
+    width: 200px;
+}
+
+.deck-view-card img {
+    border: 2px solid #555;
+}
+
+/* --- NOVO: Visualização do Deck do Jogador --- */
+#playerDeckContainer {
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 2px solid #555;
+    background-color: #050505;
+}
+
+.player-deck-card {
+    cursor: pointer;
+    width: 100px; /* Tamanho reduzido */
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #333;
+    background-color: #1a1a1a;
+    transition: transform 0.1s, border-color 0.1s, background-color 0.1s;
+    font-size: 8px; /* Fonte menor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-deck-card:hover {
+    transform: translateY(-2px);
+    border-color: #0f0;
+}
+
+.player-deck-card.selected-deck-card {
+    border-color: #f00;
+    background-color: #444;
+    box-shadow: 0 0 8px #f00;
+}
+
+.player-deck-card img {
+    width: 80px;
+    height: 50px;
+}
+
+.card-name-short {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.supertrunfo-deck-card {
+    border-color: #ff0;
+    color: #ff0;
+    background-color: #330;
+}
+
+/* Cartas em jogo */
+.card-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    margin: 1rem;
+}
+
+.flip-card {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Removido o transform: rotateY(0deg) padrão para IA */
+}
+
+/* A carta do jogador fica sempre virada (transform: rotateY(0deg) da frente) */
+/* A carta da IA começa virada para baixo por padrão (adicionado no HTML e JS) */
+.flip-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0;
+    box-shadow: 0 0 10px #600 inset, 4px 4px #000;
+    border: 4px solid #900;
+    background-color: #222;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front { transform: rotateY(0deg); }
+.card-back { transform: rotateY(180deg); }
+
+/* Destaque Super Trunfo em Jogo */
+.supertrunfo-card .card-front {
+    border-color: #ff0;
+    box-shadow: 0 0 15px #ff0;
+    background-color: #333;
+}
+.supertrunfo-card .card-back {
+    border-color: #ff0;
+}
+
+
+/* Atributos */
+.attribute-item {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    color: #0f0;
+    background-color: #111;
+    border: 2px solid #0f0;
+    margin-bottom: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.attribute-item:hover { background-color: #333; }
+.attribute-item.selected { background-color: #0f0; color: #000; }
+.attribute-item.winner { background-color: #00f; color: #fff; }
+.attribute-item.loser { background-color: #f00; color: #fff; }
+
+/* Botões */
+button {
+    background-color: #900;
+    color: #fff;
+    border: 4px solid #f00;
+    box-shadow: 0 0 5px #f00, 2px 2px #000;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-shadow: 2px 2px #000;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+button:hover { background-color: #f00; transform: scale(1.05); }
+
+/* Placar */
+.score-box {
+    background-color: #000;
+    border: 2px solid #0f0;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    box-shadow: 0 0 5px #0f0 inset;
+}
+
+/* Status */
+#gameStatus, #resultMessage {
+    text-shadow: 2px 2px #000;
+    font-size: 1.2rem;
+    min-height: 2rem;
+}
+
+.text-red-500 { color: #f00; }
+.text-green-500 { color: #0f0; }
+.text-yellow-400 { color: #ff0; }
+.text-gray-400 { color: #aaa; }

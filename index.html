@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo Retro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col items-center p-4">
+
+    <div class="text-center mb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-red-600 mb-2" style="font-family: 'Press Start 2P', cursive; text-shadow: 2px 2px #000;">SUPER TRUNFO RETRO</h1>
+        <p id="gameStatus" class="text-sm text-green-400">Analise o baralho e clique em "Começar Jogo" para iniciar!</p>
+        <button id="startGameBtn" class="mt-4 px-6 py-3">Começar Jogo</button>
+    </div>
+
+    <div id="fullDeckContainer" class="flex flex-col items-center">
+        <h2 class="text-xl mb-4">BARALHO COMPLETO</h2>
+        <div id="fullDeckGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-center">
+            </div>
+    </div>
+    
+    <div id="difficultyMenu" class="hidden text-center mt-8">
+        <h2 class="text-2xl mb-6 text-yellow-400">Selecione a Dificuldade</h2>
+        <div class="flex flex-col md:flex-row gap-4">
+            <button class="difficulty-btn px-8 py-4" data-difficulty="fácil">FÁCIL</button>
+            <button class="difficulty-btn px-8 py-4" data-difficulty="médio">MÉDIO</button>
+            <button class="difficulty-btn px-8 py-4" data-difficulty="difícil">DIFÍCIL</button>
+            <button class="difficulty-btn px-8 py-4" data-difficulty="impossível">IMPOSSÍVEL</button>
+        </div>
+    </div>
+    
+    <div id="gameContainer" class="hidden w-full flex flex-col items-center">
+        <div class="flex justify-around w-full max-w-2xl mb-6">
+            <div class="score-box">
+                <p class="text-sm">VOCÊ</p>
+                <span id="playerScore" class="text-2xl text-green-500 font-bold">0</span>
+                <p class="text-xs">Cartas: <span id="playerDeckCount">0</span></p>
+            </div>
+            <div class="score-box">
+                <p class="text-sm">IA</p>
+                <span id="aiScore" class="text-2xl text-red-500 font-bold">0</span>
+                <p class="text-xs">Cartas: <span id="aiDeckCount">0</span></p>
+            </div>
+        </div>
+
+        <h3 class="text-lg text-green-400 mb-2">SEU DECK (Clique para escolher):</h3>
+        <div id="playerDeckContainer" class="flex flex-wrap justify-center gap-2 mb-6 max-w-4xl">
+            </div>
+        
+        <div id="resultMessage" class="text-center text-lg md:text-xl font-bold mb-4" style="min-height: 2rem;"></div>
+
+        <div class="w-full flex justify-center flex-wrap">
+            <div id="playerCardContainer" class="card-container">
+                <div id="playerCard" class="flip-card">
+                    <div class="card-back absolute inset-0 p-6 flex flex-col items-center justify-center">
+                        <h2 class="text-lg font-bold text-green-400">JOGADOR</h2>
+                        <div class="text-gray-400 mt-4 text-center">SELECIONE SUA CARTA</div>
+                    </div>
+                    <div class="card-front absolute inset-0 p-6 flex flex-col items-center">
+                        <h2 class="text-sm font-bold text-red-400 mb-2" id="playerCardName">Nome do Carro</h2>
+                        <img id="playerCardImage" src="https://placehold.co/200x120/000000/FF0000?text=Carro" alt="Imagem do seu carro" class="mb-4" style="image-rendering: pixelated;">
+                        <ul class="w-full text-left space-y-2 text-green-400 text-xs" id="playerAttributes"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aiCardContainer" class="card-container">
+                <div id="aiCard" class="flip-card flipped"> <div class="card-back absolute inset-0 p-6 flex flex-col items-center justify-center">
+                        <h2 class="text-lg font-bold text-red-400">IA</h2>
+                        <div class="text-gray-400 mt-4 text-center">ESPERANDO ESCOLHA</div>
+                    </div>
+                    <div class="card-front absolute inset-0 p-6 flex flex-col items-center">
+                        <h2 class="text-sm font-bold text-red-400 mb-2" id="aiCardName">?</h2>
+                        <img id="aiCardImage" src="https://placehold.co/200x120/000000/FF0000?text=???" alt="Imagem da IA" class="mb-4" style="image-rendering: pixelated;">
+                        <ul class="w-full text-left space-y-2 text-green-400 text-xs">
+                             <li class="attribute-item text-green-400" id="aiVelocidade">VELOCIDADE: <span class="font-semibold">?</span></li>
+                             <li class="attribute-item text-green-400" id="aiResistencia">RESISTÊNCIA: <span class="font-semibold">?</span></li>
+                             <li class="attribute-item text-green-400" id="aiMotor">MOTOR: <span class="font-semibold">?</span></li>
+                             <li class="attribute-item text-green-400" id="aiPreco">PREÇO: <span class="font-semibold">?</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
