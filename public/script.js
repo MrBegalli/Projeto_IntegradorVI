@@ -152,6 +152,9 @@ const showAiCard = () => {
 
     // Gera uma imagem de placeholder com base no nome do carro
     document.getElementById('aiCardImage').src = `https://placehold.co/200x120/4a5568/CBD5E0?text=${encodeURIComponent(aiCard.nome.replace(/\s/g, '+'))}`;
+    // Remove classes de destaque antigas (caso tenham sobrado da rodada anterior)
+    const aiAttributeItems = aiCardEl.querySelectorAll('ul .attribute-item');
+    aiAttributeItems.forEach(el => el.classList.remove('selected', 'winner', 'loser'));
 
     const aiVelocidadeEl = document.getElementById('aiVelocidade').querySelector('span');
     aiVelocidadeEl.textContent = aiCard.velocidade.toLocaleString('pt-BR');
@@ -414,7 +417,7 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
             // Se for Super Trunfo, o valor é o máximo possível
             const aiValue = aiSimulatedCard.supertrunfo ? Infinity : aiSimulatedCard[attribute];
             
-            let eval;
+            let scoreEval;
             // A IA assume que o jogador vai escolher o melhor atributo
             let playerBestAttribute = getBestPlayerMove(currentPlayerDeck[0], aiSimulatedCard);
             const playerValue = currentPlayerDeck[0].supertrunfo ? -Infinity : currentPlayerDeck[0][playerBestAttribute];
@@ -435,8 +438,8 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
                 nextPlayerDeck.push(nextPlayerDeck.shift());
             }
 
-            eval = minimax(depth - 1, false, nextAiDeck, nextPlayerDeck);
-            maxEval = Math.max(maxEval, eval);
+            scoreEval = minimax(depth - 1, false, nextAiDeck, nextPlayerDeck);
+            maxEval = Math.max(maxEval, scoreEval);
         }
         return maxEval;
     } 
@@ -449,7 +452,7 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
             // Se for Super Trunfo, o valor é o máximo possível
             const playerValue = playerSimulatedCard.supertrunfo ? Infinity : playerSimulatedCard[attribute];
             
-            let eval;
+            let scoreEval;
             // O jogador assume que a IA vai escolher o melhor atributo
             let aiBestAttribute = getBestAiMove(currentAiDeck[0], playerSimulatedCard);
             const aiValue = currentAiDeck[0].supertrunfo ? -Infinity : currentAiDeck[0][aiBestAttribute];
@@ -470,8 +473,8 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
                 nextPlayerDeck.push(nextPlayerDeck.shift());
             }
 
-            eval = minimax(depth - 1, true, nextAiDeck, nextPlayerDeck);
-            minEval = Math.min(minEval, eval);
+            scoreEval = minimax(depth - 1, true, nextAiDeck, nextPlayerDeck);
+            minEval = Math.min(minEval, scoreEval);
         }
         return minEval;
     }
