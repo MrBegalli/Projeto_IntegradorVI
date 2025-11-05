@@ -3,12 +3,14 @@
 
 body {
     font-family: 'Press Start 2P', cursive;
+    /* Use background image from root folder */
     background-image: url('background_jogo.jpg');
+    background-color: rgba(0, 0, 0, 0.5); /* Mais transparente */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: multiply;
+    background-blend-mode: overlay; /* Mudado para overlay */
     color: #f5f5f5;
     text-shadow: 2px 2px #000;
 }

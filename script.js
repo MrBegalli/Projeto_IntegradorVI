@@ -1,4 +1,4 @@
-// Dados do baralho de carros em um array JavaScript
+// --- Dados do baralho de carros ---
 const DECK = [
     { nome: 'Falcon GT', pais: 'EUA', velocidade: 320, resistencia: 78, motor: 480, preco: 420000 },
     { nome: 'Veloce S', pais: 'Itália', velocidade: 330, resistencia: 70, motor: 520, preco: 690000 },
@@ -10,7 +10,6 @@ const DECK = [
     { nome: 'Tourer Hybrid', pais: 'Japão', velocidade: 230, resistencia: 95, motor: 200, preco: 160000 },
     { nome: 'Riviera LX', pais: 'França', velocidade: 260, resistencia: 80, motor: 260, preco: 240000 },
     { nome: 'Monaco V12', pais: 'Itália', velocidade: 340, resistencia: 68, motor: 700, preco: 1500000 },
-    // Adicionando a carta Super Trunfo
     { nome: 'Super Trunfo', pais: 'Mundo', velocidade: 999, resistencia: 999, motor: 999, preco: 999999999, supertrunfo: true }
 ];
 
@@ -26,13 +25,11 @@ const ATTRIBUTES = {
 let playerDeck = [];
 let aiDeck = [];
 let playerCard, aiCard;
-let isPlayerTurn = true;
-let isGameActive = false;
-let playerScore = 0;
-let aiScore = 0;
-let selectedCardIndex = 0; // Índice da carta selecionada para jogar
+let isPlayerTurn = true, isGameActive = false;
+let playerScore = 0, aiScore = 0;
+let selectedCardIndex = 0;
 const winningScore = 5;
-let gameDifficulty = 'fácil'; // Nova variável de estado
+let gameDifficulty = 'fácil';
 
 // --- Elementos do DOM ---
 const gameStatusEl = document.getElementById('gameStatus');
@@ -47,20 +44,16 @@ const resultMessageEl = document.getElementById('resultMessage');
 const fullDeckContainer = document.getElementById('fullDeckContainer');
 const fullDeckGrid = document.getElementById('fullDeckGrid');
 const gameContainer = document.getElementById('gameContainer');
-// Elementos adicionados para o novo layout/funcionalidade
-const difficultyMenu = document.getElementById('difficultyMenu'); // Novo
-const playerDeckContainer = document.getElementById('playerDeckContainer'); // Novo
+const difficultyMenu = document.getElementById('difficultyMenu');
+const playerDeckContainer = document.getElementById('playerDeckContainer');
 const playerCardNameEl = document.getElementById('playerCardName');
 const playerCardImageEl = document.getElementById('playerCardImage');
 const playerAttributesList = document.getElementById('playerAttributes');
 
+// --- Função para obter caminho da imagem ---
+const getCardImagePath = (cardName) => `images/${cardName}.jpg`;
 
-// --- Lógica do Jogo ---
-
-/**
- * Embaralha um array usando o algoritmo de Fisher-Yates.
- * @param {Array} array - O array a ser embaralhado.
- */
+// --- Funções auxiliares ---
 const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -73,18 +66,18 @@ const shuffle = (array) => {
  * (Sem alteração)
  */
 const renderFullDeck = () => {
-    fullDeckGrid.innerHTML = ''; // Limpa a visualização anterior
+    fullDeckGrid.innerHTML = '';
     DECK.forEach(card => {
         const cardEl = document.createElement('div');
         cardEl.className = 'deck-view-card';
         cardEl.innerHTML = `
             <h3 class="font-bold mb-2">${card.nome}</h3>
-            <img src="https://placehold.co/150x90/4a5568/CBD5E0?text=${encodeURIComponent(card.nome.replace(/\s/g, '+'))}" alt="Imagem do carro" class="mx-auto rounded-lg">
+            <img src="${getCardImagePath(card.nome)}" alt="Imagem do ${card.nome}" class="mx-auto rounded-lg">
             <ul class="mt-2 text-sm text-left">
-                <li>${ATTRIBUTES.velocidade}: <span class="font-semibold">${card.velocidade.toLocaleString('pt-BR')}</span></li>
-                <li>${ATTRIBUTES.resistencia}: <span class="font-semibold">${card.resistencia.toLocaleString('pt-BR')}</span></li>
-                <li>${ATTRIBUTES.motor}: <span class="font-semibold">${card.motor.toLocaleString('pt-BR')}</span></li>
-                <li>${ATTRIBUTES.preco}: <span class="font-semibold">R$ ${card.preco.toLocaleString('pt-BR')}</span></li>
+                <li>${ATTRIBUTES.velocidade}: <span class="font-semibold text-blue-400">${card.velocidade.toLocaleString('pt-BR')}</span></li>
+                <li>${ATTRIBUTES.resistencia}: <span class="font-semibold text-red-400">${card.resistencia.toLocaleString('pt-BR')}</span></li>
+                <li>${ATTRIBUTES.motor}: <span class="font-semibold text-green-400">${card.motor.toLocaleString('pt-BR')}</span></li>
+                <li>${ATTRIBUTES.preco}: <span class="font-semibold text-yellow-400">R$ ${card.preco.toLocaleString('pt-BR')}</span></li>
             </ul>
         `;
         fullDeckGrid.appendChild(cardEl);
@@ -118,9 +111,8 @@ const renderPlayerDeck = () => {
         cardEl.title = card.nome;
         cardEl.innerHTML = `
             <span class="card-name-short">${card.nome}</span>
-            <img src="https://placehold.co/80x50/4a5568/CBD5E0?text=${encodeURIComponent(card.nome.replace(/\s/g, '+'))}" alt="${card.nome}" style="image-rendering: pixelated; margin-top: 5px; border: 1px solid #555;">
+            <img src="${getCardImagePath(card.nome)}" alt="${card.nome}" style="image-rendering: pixelated; margin-top: 5px; border: 1px solid #555;">
         `;
-        
         cardEl.addEventListener('click', () => selectCard(index));
         playerDeckContainer.appendChild(cardEl);
     });
@@ -132,7 +124,6 @@ const renderPlayerDeck = () => {
  */
 const selectCard = (index) => {
     if (!isGameActive || !isPlayerTurn) return;
-    
     selectedCardIndex = index;
     renderPlayerDeck(); // Renderiza novamente para atualizar a seleção
     
@@ -158,22 +149,13 @@ const updateGameStats = () => {
  * (Atualizado para usar a carta selecionada e novos elementos)
  */
 const showPlayerCard = () => {
-    // A carta é definida por selectCard() ou startRound()
     if (!playerCard) return;
-
     playerCardNameEl.textContent = playerCard.nome;
     
     // Adiciona uma classe específica se a carta for o Super Trunfo
     const playerCardContainerEl = document.getElementById('playerCardContainer');
-    if (playerCard.supertrunfo) {
-        playerCardContainerEl.classList.add('supertrunfo-card');
-    } else {
-        playerCardContainerEl.classList.remove('supertrunfo-card');
-    }
-
-    // Gera uma imagem de placeholder com base no nome do carro
-    playerCardImageEl.src = `https://placehold.co/200x120/4a5568/CBD5E0?text=${encodeURIComponent(playerCard.nome.replace(/\s/g, '+'))}`;
-
+    playerCardContainerEl.classList.toggle('supertrunfo-card', !!playerCard.supertrunfo);
+    playerCardImageEl.src = getCardImagePath(playerCard.nome);
     playerAttributesList.innerHTML = '';
     
     // Cria os itens de atributo clicáveis
@@ -198,16 +180,8 @@ const showAiCard = () => {
     
     // Ocultar a frente da IA
     document.getElementById('aiCardName').textContent = '?';
-    document.getElementById('aiCardImage').src = `https://placehold.co/200x120/000000/FF0000?text=???`;
-    
-    // Resetar os valores exibidos
-    const aiAttributes = ['aiVelocidade', 'aiResistencia', 'aiMotor', 'aiPreco'];
-    aiAttributes.forEach(id => {
-        document.getElementById(id).querySelector('span').textContent = '?';
-    });
-
-    // A carta da IA deve SEMPRE começar virada para baixo no novo modo
-    aiCardEl.classList.add('flipped'); 
+    document.getElementById('aiCardImage').src = 'images/placeholder.jpg'; // placeholder opcional
+    aiCardEl.classList.add('flipped');
 };
 
 /**
@@ -216,33 +190,20 @@ const showAiCard = () => {
  */
 const revealAiCard = () => {
     document.getElementById('aiCardName').textContent = aiCard.nome;
-    // Adiciona uma classe específica se a carta for o Super Trunfo
     const aiCardContainerEl = document.getElementById('aiCardContainer');
-    if (aiCard.supertrunfo) {
-        aiCardContainerEl.classList.add('supertrunfo-card');
-    } else {
-        aiCardContainerEl.classList.remove('supertrunfo-card');
+    aiCardContainerEl.classList.toggle('supertrunfo-card', !!aiCard.supertrunfo);
+    document.getElementById('aiCardImage').src = getCardImagePath(aiCard.nome);
+    // Atualiza atributos
+    const attrMap = { velocidade: 'aiVelocidade', resistencia: 'aiResistencia', motor: 'aiMotor', preco: 'aiPreco' };
+    for (const key in attrMap) {
+        const el = document.getElementById(attrMap[key]);
+        if (el) {
+            const span = el.querySelector('span');
+            span.textContent = aiCard[key].toLocaleString('pt-BR');
+        }
     }
-
-    // Gera uma imagem de placeholder com base no nome do carro
-    document.getElementById('aiCardImage').src = `https://placehold.co/200x120/4a5568/CBD5E0?text=${encodeURIComponent(aiCard.nome.replace(/\s/g, '+'))}`;
-
-    const aiVelocidadeEl = document.getElementById('aiVelocidade').querySelector('span');
-    aiVelocidadeEl.textContent = aiCard.velocidade.toLocaleString('pt-BR');
-    
-    const aiResistenciaEl = document.getElementById('aiResistencia').querySelector('span');
-    aiResistenciaEl.textContent = aiCard.resistencia.toLocaleString('pt-BR');
-    
-    const aiMotorEl = document.getElementById('aiMotor').querySelector('span');
-    aiMotorEl.textContent = aiCard.motor.toLocaleString('pt-BR');
-    
-    const aiPrecoEl = document.getElementById('aiPreco').querySelector('span');
-    aiPrecoEl.textContent = 'R$ ' + aiCard.preco.toLocaleString('pt-BR');
-
-    // Vira a carta para a frente
     aiCardEl.classList.remove('flipped');
 };
-
 
 /**
  * Compara os atributos e determina o vencedor da rodada.
@@ -473,6 +434,9 @@ const selectDifficulty = (difficulty) => {
     dealCards();
     updateGameStats();
     
+    // Inicia a música de fundo
+    musicPlayer.start();
+    
     // Seleciona a primeira carta do deck do jogador por padrão e renderiza
     selectedCardIndex = 0;
     renderPlayerDeck();
@@ -529,7 +493,7 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
         for (const attribute in ATTRIBUTES) {
             const aiValue = aiSimulatedCard.supertrunfo ? Infinity : aiSimulatedCard[attribute];
             
-            let eval;
+            let evaluation;
             let playerBestAttribute = getBestPlayerMove(currentPlayerDeck[0], aiSimulatedCard);
             const playerValue = currentPlayerDeck[0].supertrunfo ? -Infinity : currentPlayerDeck[0][playerBestAttribute];
 
@@ -545,8 +509,8 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
                 nextPlayerDeck.push(nextPlayerDeck.shift());
             }
 
-            eval = minimax(depth - 1, false, nextAiDeck, nextPlayerDeck);
-            maxEval = Math.max(maxEval, eval);
+            evaluation = minimax(depth - 1, false, nextAiDeck, nextPlayerDeck);
+            maxEval = Math.max(maxEval, evaluation);
         }
         return maxEval;
     } 
@@ -557,7 +521,7 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
         for (const attribute in ATTRIBUTES) {
             const playerValue = playerSimulatedCard.supertrunfo ? Infinity : playerSimulatedCard[attribute];
             
-            let eval;
+            let evaluation;
             let aiBestAttribute = getBestAiMove(currentAiDeck[0], playerSimulatedCard);
             const aiValue = currentAiDeck[0].supertrunfo ? -Infinity : currentAiDeck[0][aiBestAttribute];
 
@@ -573,8 +537,8 @@ const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) =>
                 nextPlayerDeck.push(nextPlayerDeck.shift());
             }
 
-            eval = minimax(depth - 1, true, nextAiDeck, nextPlayerDeck);
-            minEval = Math.min(minEval, eval);
+            evaluation = minimax(depth - 1, true, nextAiDeck, nextPlayerDeck);
+            minEval = Math.min(minEval, evaluation);
         }
         return minEval;
     }
@@ -703,15 +667,54 @@ const handleAITurn = () => {
     isPlayerTurn = true;
 };
 
-// Adiciona o evento de clique para o botão de iniciar jogo
-startGameBtn.addEventListener('click', showDifficultyMenu);
+// Sistema de Música de Fundo
+const musicPlayer = {
+    playlist: [
+        'music/Cruise Control.mp3',
+        'music/Drifting With Stairs.mp3',
+        'music/Uno Trails.mp3'
+    ],
+    currentTrack: 0,
+    audio: new Audio(),
+    
+    // Inicia a reprodução
+    start() {
+        console.log('Iniciando sistema de música...');
+        this.currentTrack = 0;
+        this.playCurrentTrack();
+    },
+    
+    // Toca a música atual
+    playCurrentTrack() {
+        // Configura o áudio
+        this.audio.src = this.playlist[this.currentTrack];
+        this.audio.volume = 0.5;
+        this.audio.load();
+        
+        // Tenta tocar
+        const playPromise = this.audio.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.log('Erro ao tocar, tentando novamente:', error);
+                setTimeout(() => this.playCurrentTrack(), 1000);
+            });
+        }
 
-// Adiciona eventos de clique para o menu de dificuldade (NOVO)
+        // Quando terminar, toca a próxima
+        this.audio.onended = () => {
+            this.currentTrack = (this.currentTrack + 1) % this.playlist.length;
+            this.playCurrentTrack();
+        };
+    }
+};
+
+// --- Eventos ---
+startGameBtn.addEventListener('click', showDifficultyMenu);
 document.querySelectorAll('.difficulty-btn').forEach(button => {
-    button.addEventListener('click', (event) => {
-        selectDifficulty(event.target.dataset.difficulty);
-    });
+    button.addEventListener('click', (event) => selectDifficulty(event.target.dataset.difficulty));
 });
 
-// Renderiza o baralho completo quando a página é carregada
-document.addEventListener('DOMContentLoaded', renderFullDeck);
+// Carrega o deck quando a página carrega
+document.addEventListener('DOMContentLoaded', () => {
+    renderFullDeck();
+});
