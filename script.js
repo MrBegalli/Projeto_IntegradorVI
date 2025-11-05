@@ -360,7 +360,8 @@ const resetGame = () => {
     fullDeckContainer.classList.remove('hidden');
     gameContainer.classList.add('hidden');
     difficultyMenu.classList.add('hidden'); // Oculta o menu
-    startGameBtn.style.display = 'block';
+    // Mantém o botão centralizado (inline-block para respeitar text-center)
+    startGameBtn.style.display = 'inline-block';
     
     gameStatusEl.textContent = 'Analise o baralho e clique em "Começar Jogo" para iniciar!';
     gameStatusEl.classList.remove('text-green-500', 'text-red-500', 'text-yellow-400');
