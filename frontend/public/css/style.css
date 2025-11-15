@@ -1,0 +1,151 @@
+/* Estilos customizados para Super Trunfo IA */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+}
+
+.retro-title {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px 0px #000, 
+                 6px 6px 0px rgba(220, 38, 38, 0.5);
+    letter-spacing: 2px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Botões */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.difficulty-btn {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Cartas */
+.attribute-option {
+    animation: fadeIn 0.3s ease;
+    transition: all 0.2s ease;
+}
+
+.attribute-option:hover {
+    transform: translateX(5px);
+}
+
+/* Deck do jogador */
+#playerDeckContainer > div {
+    animation: slideIn 0.3s ease;
+}
+
+/* Mensagens de resultado */
+#resultMessage {
+    animation: pulse 0.5s ease;
+}
+
+/* Placar */
+#playerScore, #aiScore {
+    transition: all 0.3s ease;
+}
+
+/* Efeito de brilho nos scores quando mudam */
+.score-update {
+    animation: pulse 0.5s ease;
+}
+
+/* Container do jogo */
+#gameContainer {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .retro-title {
+        font-size: 1.5rem;
+    }
+    
+    #playerDeckContainer {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Efeitos de hover nas cartas */
+.bg-gray-700:hover {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+/* Destaque da carta selecionada */
+.border-green-400 {
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.6);
+}
+
+/* Atributo selecionado */
+.bg-blue-600 {
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+}
