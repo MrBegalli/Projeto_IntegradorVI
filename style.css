@@ -192,3 +192,34 @@ button:hover { background-color: #f00; transform: scale(1.05); }
 .text-green-500 { color: #0f0; }
 .text-yellow-400 { color: #ff0; }
 .text-gray-400 { color: #aaa; }
+
+/* Novo: Descrição de Dificuldade */
+.difficulty-desc {
+    font-size: 8px; /* Fonte menor para a descrição */
+    text-shadow: 1px 1px #000;
+    max-width: 120px;
+    min-height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Novo: Estilo para o botão de confirmação da carta */
+#confirmCardBtn {
+    background-color: #00f; /* Azul */
+    border-color: #008;
+    box-shadow: 0 0 5px #00f, 2px 2px #000;
+}
+#confirmCardBtn:hover:not(:disabled) { 
+    background-color: #008; 
+    transform: scale(1.05); 
+}
+#confirmCardBtn:disabled {
+    background-color: #444;
+    border-color: #666;
+    color: #999;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

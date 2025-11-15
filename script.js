@@ -1,4 +1,4 @@
-// --- Dados do baralho de carros ---
+// Dados do baralho de carros ---
 const DECK = [
     { nome: 'Falcon GT', pais: 'EUA', velocidade: 320, resistencia: 78, motor: 480, preco: 420000 },
     { nome: 'Veloce S', pais: 'Itália', velocidade: 330, resistencia: 70, motor: 520, preco: 690000 },
@@ -19,6 +19,14 @@ const ATTRIBUTES = {
     resistencia: 'Resistência',
     motor: 'Motor',
     preco: 'Preço'
+};
+
+// Novo: Mapa de descrições para a dificuldade
+const DIFFICULTY_DESCRIPTIONS = {
+    'fácil': 'Bot Simples: Inteligência aleatória (Conhecimento nulo).',
+    'médio': 'Algoritmo de Monte Carlo: Simulações limitadas.',
+    'difícil': 'Minimax: Busca de profundidade (Visão de 2 turnos).',
+    'impossível': 'Reinforced Learning: Minimax de alta profundidade (Visão de 3+ turnos).'
 };
 
 // --- Variáveis de Estado do Jogo ---
@@ -49,6 +57,7 @@ const playerDeckContainer = document.getElementById('playerDeckContainer');
 const playerCardNameEl = document.getElementById('playerCardName');
 const playerCardImageEl = document.getElementById('playerCardImage');
 const playerAttributesList = document.getElementById('playerAttributes');
+const confirmCardBtn = document.getElementById('confirmCardBtn'); // NOVO: Botão de confirmação
 
 // --- Função para obter caminho da imagem ---
 const getCardImagePath = (cardName) => `images/${cardName}.jpg`;
@@ -63,7 +72,6 @@ const shuffle = (array) => {
 
 /**
  * Renderiza todas as cartas do baralho completo.
- * (Sem alteração)
  */
 const renderFullDeck = () => {
     fullDeckGrid.innerHTML = '';
@@ -86,7 +94,6 @@ const renderFullDeck = () => {
 
 /**
  * Distribui as cartas para o jogador e a IA.
- * (Sem alteração)
  */
 const dealCards = () => {
     // Cria uma cópia do baralho e embaralha
@@ -99,7 +106,7 @@ const dealCards = () => {
 };
 
 /**
- * Renderiza a visualização do deck do jogador. (NOVO)
+ * Renderiza a visualização do deck do jogador.
  */
 const renderPlayerDeck = () => {
     playerDeckContainer.innerHTML = ''; // Limpa o deck anterior
@@ -119,23 +126,30 @@ const renderPlayerDeck = () => {
 };
 
 /**
- * Seleciona a carta a ser jogada. (NOVO)
+ * Seleciona a carta a ser jogada. (MODIFICADO para habilitar o botão de confirmação na vez da IA)
  * @param {number} index - O índice da carta no deck do jogador.
  */
 const selectCard = (index) => {
-    if (!isGameActive || !isPlayerTurn) return;
-    selectedCardIndex = index;
-    renderPlayerDeck(); // Renderiza novamente para atualizar a seleção
+    if (!isGameActive) return;
     
-    // Atualiza a carta principal com a carta selecionada
+    selectedCardIndex = index;
     playerCard = playerDeck[selectedCardIndex];
-    showPlayerCard();
-    gameStatusEl.textContent = 'Carta selecionada. Escolha um atributo ou mude de carta.';
+    
+    renderPlayerDeck(); // Renderiza novamente para atualizar a seleção
+    showPlayerCard(); // Atualiza a carta principal com a carta selecionada
+    
+    if (!isPlayerTurn) {
+        // Na vez da IA, o jogador pode selecionar a carta, e o botão é habilitado
+        confirmCardBtn.disabled = false;
+        gameStatusEl.textContent = 'Carta selecionada. Clique em "Escolher Carta" para que a IA jogue.';
+    } else {
+        // Na vez do jogador, a seleção do atributo é que prossegue
+        gameStatusEl.textContent = 'Carta selecionada. Escolha um atributo ou mude de carta.';
+    }
 };
 
 /**
  * Atualiza a contagem de cartas e o placar na tela.
- * (Sem alteração)
  */
 const updateGameStats = () => {
     playerDeckCountEl.textContent = playerDeck.length;
@@ -146,7 +160,6 @@ const updateGameStats = () => {
 
 /**
  * Vira a carta do jogador para a frente e exibe seus dados.
- * (Atualizado para usar a carta selecionada e novos elementos)
  */
 const showPlayerCard = () => {
     if (!playerCard) return;
@@ -173,7 +186,6 @@ const showPlayerCard = () => {
 
 /**
  * Vira a carta da IA para a frente e exibe seus dados.
- * (Alterado para não mostrar a frente até a comparação)
  */
 const showAiCard = () => {
     aiCard = aiDeck[0];
@@ -185,8 +197,7 @@ const showAiCard = () => {
 };
 
 /**
- * Revela os valores da IA. (NOVO)
- * Esta função é chamada *durante* o compareCards, após a escolha do atributo.
+ * Revela os valores da IA.
  */
 const revealAiCard = () => {
     document.getElementById('aiCardName').textContent = aiCard.nome;
@@ -308,7 +319,6 @@ const moveCards = (winner) => {
 
 /**
  * Verifica se o jogo terminou.
- * (Sem alteração)
  */
 const checkEndGame = () => {
     if (playerScore >= winningScore || aiDeck.length === 0) {
@@ -323,7 +333,6 @@ const checkEndGame = () => {
 
 /**
  * Encerra o jogo e exibe a mensagem final.
- * (Removido o botão de reinício em endGame, será manipulado por resetGame)
  * @param {string} message - A mensagem de vitória ou derrota.
  */
 const endGame = (message) => {
@@ -342,8 +351,7 @@ const endGame = (message) => {
 };
 
 /**
- * Reseta o jogo para o estado inicial.
- * (Atualizado para mostrar o menu de dificuldade após o reset)
+ * Reseta o jogo para o estado inicial. (MODIFICADO para esconder o botão de confirmação)
  */
 const resetGame = () => {
     playerScore = 0;
@@ -355,6 +363,9 @@ const resetGame = () => {
     // Remove o botão de reinício
     const restartBtn = document.querySelector('.text-center button:last-of-type');
     if (restartBtn) restartBtn.remove();
+    
+    // Esconde o botão de confirmação
+    confirmCardBtn.classList.add('hidden');
     
     // Exibe o baralho completo e o botão de iniciar, oculta o jogo e o menu
     fullDeckContainer.classList.remove('hidden');
@@ -375,8 +386,7 @@ const resetGame = () => {
 };
 
 /**
- * Inicia a rodada.
- * (Atualizado para lidar com a seleção de carta do jogador)
+ * Inicia a rodada. (MODIFICADO para lidar com a seleção de carta do jogador na vez da IA)
  */
 const startRound = () => {
     resultMessageEl.textContent = '';
@@ -397,11 +407,16 @@ const startRound = () => {
         gameStatusEl.textContent = 'Sua vez! Selecione sua carta e escolha um atributo.';
         gameStatusEl.classList.remove('text-red-500', 'text-yellow-400');
         gameStatusEl.classList.add('text-green-500');
+        confirmCardBtn.classList.add('hidden'); // Oculta o botão na vez do jogador
     } else {
-        gameStatusEl.textContent = 'Vez da IA...';
+        // Vez da IA: Jogador seleciona a carta, depois confirma
+        gameStatusEl.textContent = 'Vez da IA. Selecione sua carta e clique em "Escolher Carta".';
         gameStatusEl.classList.remove('text-green-500', 'text-red-500');
         gameStatusEl.classList.add('text-yellow-400');
-        setTimeout(handleAITurn, 1500); // Pequeno atraso para a IA
+        
+        // Mostra o botão. Ele é habilitado imediatamente se selectedCardIndex for 0
+        confirmCardBtn.classList.remove('hidden'); 
+        confirmCardBtn.disabled = false;
     }
     
     // Limpa os destaques de rodadas anteriores
@@ -411,7 +426,7 @@ const startRound = () => {
 };
 
 /**
- * Mostra o menu de dificuldade. (NOVO)
+ * Mostra o menu de dificuldade e popula as descrições. (MODIFICADO para incluir descrições)
  */
 const showDifficultyMenu = () => {
     fullDeckContainer.classList.add('hidden');
@@ -420,10 +435,16 @@ const showDifficultyMenu = () => {
     gameStatusEl.textContent = 'Escolha o nível de dificuldade.';
     gameStatusEl.classList.remove('text-gray-400');
     gameStatusEl.classList.add('text-yellow-400');
+    
+    // Popula as descrições
+    document.querySelectorAll('.difficulty-desc').forEach(span => {
+        const difficulty = span.dataset.difficulty;
+        span.textContent = DIFFICULTY_DESCRIPTIONS[difficulty] || '';
+    });
 };
 
 /**
- * Inicia o jogo após a seleção de dificuldade. (NOVO)
+ * Inicia o jogo após a seleção de dificuldade.
  * @param {string} difficulty - A dificuldade selecionada.
  */
 const selectDifficulty = (difficulty) => {
@@ -450,6 +471,7 @@ const selectDifficulty = (difficulty) => {
  * @param {Event} event - O evento de clique.
  */
 const handlePlayerTurn = (event) => {
+    // Permite jogar apenas se for o turno do jogador e o jogo estiver ativo
     if (!isPlayerTurn || !isGameActive) return;
 
     // Remove a seleção de todos os atributos
@@ -460,7 +482,7 @@ const handlePlayerTurn = (event) => {
     // Se a carta for o Super Trunfo, ignora o clique e vence automaticamente
     if (playerCard.supertrunfo) {
         gameStatusEl.textContent = 'SUPER TRUNFO! Você vence a rodada!';
-        compareCards(null);
+        compareCards(Object.keys(ATTRIBUTES)[0]); // Passa um atributo para a comparação de destaque
         isPlayerTurn = false;
         return;
     }
@@ -474,12 +496,24 @@ const handlePlayerTurn = (event) => {
     isPlayerTurn = false;
 };
 
-
-// --- Minimax e Lógica da IA (Sem Alteração na Estrutura, mas o uso da dificuldade seria aqui) ---
-
 /**
- * Funções para a IA Minimax
+ * Confirma a carta selecionada pelo jogador na vez da IA e dispara a jogada da IA. (NOVO)
  */
+const confirmCardSelection = () => {
+    if (isPlayerTurn || !isGameActive || confirmCardBtn.disabled) return;
+    
+    // Desabilita o botão para evitar cliques duplos
+    confirmCardBtn.disabled = true;
+    confirmCardBtn.classList.add('hidden'); // Oculta o botão
+    
+    gameStatusEl.textContent = `Aguarde, a IA está analisando sua carta e escolhendo o atributo...`;
+    
+    // Dispara a jogada da IA com um pequeno atraso
+    setTimeout(handleAITurn, 1500); 
+};
+
+
+// --- Minimax e Lógica da IA (Mantida a Estrutura Existente) ---
 
 const minimax = (depth, isMaximizingPlayer, currentAiDeck, currentPlayerDeck) => {
     // ... (Minimax implementation as before)
@@ -585,19 +619,15 @@ const getBestAiMove = (aiCard, playerCard) => {
 
 
 const getBestMinimaxMove = () => {
-    // A Lógica da IA aqui seria ajustada com base na 'gameDifficulty'
-    // Por exemplo:
-    // 'fácil': Escolhe um atributo aleatório ou apenas o melhor para a rodada atual.
-    // 'médio': Usa o getBestAiMove (melhor jogada gananciosa, 1 turno).
-    // 'difícil': Usa o Minimax com profundidade 2.
-    // 'impossível': Usa o Minimax com profundidade 3 ou mais.
-
+    // A carta do jogador a ser usada é a `playerDeck[selectedCardIndex]`.
+    const currentSelectedPlayerCard = playerDeck[selectedCardIndex];
+    
     if (aiDeck[0].supertrunfo) {
         return Object.keys(ATTRIBUTES)[0]; 
     }
     
     // Lógica Simplificada para demonstrar o conceito:
-    let bestMove = getBestAiMove(aiDeck[0], playerDeck[selectedCardIndex]); // Jogada gananciosa
+    let bestMove = getBestAiMove(aiDeck[0], currentSelectedPlayerCard); // Jogada gananciosa
 
     if (gameDifficulty === 'fácil') {
          // Escolhe aleatoriamente para 'Fácil'
@@ -608,7 +638,6 @@ const getBestMinimaxMove = () => {
         // Já está definida acima
     } else if (gameDifficulty === 'difícil' || gameDifficulty === 'impossível') {
         // Usa Minimax para 'Difícil' e 'Impossível'
-        // 'Impossível' pode ser uma profundidade maior, mas 2 já é um bom desafio.
         let maxEval = -Infinity;
         const aiSimulatedCard = aiDeck[0];
         const depth = gameDifficulty === 'impossível' ? 3 : 2; // Profundidade 3 para Impossível, 2 para Difícil
@@ -618,17 +647,24 @@ const getBestMinimaxMove = () => {
             let nextAiDeck = [...aiDeck];
             let nextPlayerDeck = [...playerDeck];
 
-            const aiValue = nextAiDeck[0][attribute];
-            // O jogador, na simulação, escolherá o melhor atributo contra a IA.
-            const playerValue = nextPlayerDeck[0].supertrunfo ? Infinity : nextPlayerDeck[0][getBestPlayerMove(nextPlayerDeck[0], nextAiDeck[0])];
+            // Simula a remoção da carta da IA (sempre a primeira) e a carta do jogador (a selecionada)
+            const aiPlayedCard = nextAiDeck.shift();
+            const playerPlayedCard = nextPlayerDeck.splice(selectedCardIndex, 1)[0]; 
+
+            const aiValue = aiPlayedCard.supertrunfo ? Infinity : aiPlayedCard[attribute];
+            // O jogador, na simulação, escolherá o melhor atributo contra a IA (para a carta que ele usou)
+            // No Minimax de IA, é um cenário PIOR para ela, então simula-se a melhor jogada do jogador
+            const playerAttribute = getBestPlayerMove(playerPlayedCard, aiPlayedCard);
+            const playerValue = playerPlayedCard.supertrunfo ? Infinity : playerPlayedCard[playerAttribute];
             
+            // Simulação da comparação
             if (aiValue > playerValue) {
-                nextAiDeck.push(nextAiDeck.shift(), nextPlayerDeck.shift());
+                nextAiDeck.push(aiPlayedCard, playerPlayedCard);
             } else if (playerValue > aiValue) {
-                nextPlayerDeck.push(nextPlayerDeck.shift(), nextAiDeck.shift());
+                nextPlayerDeck.push(playerPlayedCard, aiPlayedCard);
             } else {
-                nextAiDeck.push(nextAiDeck.shift());
-                nextPlayerDeck.push(nextPlayerDeck.shift());
+                nextAiDeck.push(aiPlayedCard);
+                nextPlayerDeck.push(playerPlayedCard);
             }
             
             // Chamada recursiva para o Minimax
@@ -646,10 +682,11 @@ const getBestMinimaxMove = () => {
 
 
 /**
- * Manipula a jogada da IA.
- * (Sem alteração, chama a função de Minimax atualizada)
+ * Manipula a jogada da IA. (Chamada pelo botão de confirmação)
  */
 const handleAITurn = () => {
+    if (isPlayerTurn || !isGameActive) return;
+
     let selectedAttribute = getBestMinimaxMove();
 
     gameStatusEl.textContent = `A IA escolheu: ${ATTRIBUTES[selectedAttribute]}!`;
@@ -671,9 +708,8 @@ const handleAITurn = () => {
 // Sistema de Música de Fundo
 const musicPlayer = {
     playlist: [
-        'music/Cruise Control.mp3',
-        'music/Drifting With Stairs.mp3',
-        'music/Uno Trails.mp3'
+        'music/WhatsApp-Audio-2025-11-06-at-15.21.36.mp3'
+        
     ],
     currentTrack: 0,
     audio: new Audio(),
@@ -714,6 +750,7 @@ startGameBtn.addEventListener('click', showDifficultyMenu);
 document.querySelectorAll('.difficulty-btn').forEach(button => {
     button.addEventListener('click', (event) => selectDifficulty(event.target.dataset.difficulty));
 });
+confirmCardBtn.addEventListener('click', confirmCardSelection); // NOVO: Evento para o botão de confirmação
 
 // Carrega o deck quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {

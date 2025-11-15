@@ -23,11 +23,23 @@
     
     <div id="difficultyMenu" class="hidden text-center mt-8">
         <h2 class="text-2xl mb-6 text-yellow-400">Selecione a Dificuldade</h2>
-        <div class="flex flex-col md:flex-row gap-4">
-            <button class="difficulty-btn px-8 py-4" data-difficulty="fácil">FÁCIL</button>
-            <button class="difficulty-btn px-8 py-4" data-difficulty="médio">MÉDIO</button>
-            <button class="difficulty-btn px-8 py-4" data-difficulty="difícil">DIFÍCIL</button>
-            <button class="difficulty-btn px-8 py-4" data-difficulty="impossível">IMPOSSÍVEL</button>
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="fácil">FÁCIL</button>
+                <span class="difficulty-desc text-xs mt-4 text-green-400" data-difficulty="fácil"></span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="médio">MÉDIO</button>
+                <span class="difficulty-desc text-xs mt-4 text-yellow-400" data-difficulty="médio"></span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="difícil">DIFÍCIL</button>
+                <span class="difficulty-desc text-xs mt-4 text-red-400" data-difficulty="difícil"></span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="impossível">IMPOSSÍVEL</button>
+                <span class="difficulty-desc text-xs mt-4 text-purple-400" data-difficulty="impossível"></span>
+            </div>
         </div>
     </div>
     
@@ -50,6 +62,8 @@
             </div>
         
         <div id="resultMessage" class="text-center text-lg md:text-xl font-bold mb-4" style="min-height: 2rem;"></div>
+
+        <button id="confirmCardBtn" class="hidden px-6 py-3 mb-4" disabled>Escolher Carta</button>
 
         <div class="w-full flex justify-center flex-wrap">
             <div id="playerCardContainer" class="card-container">
