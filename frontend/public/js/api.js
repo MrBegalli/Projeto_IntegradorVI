@@ -2,7 +2,10 @@
  * Módulo de comunicação com a API do backend.
  */
 
-const API_BASE_URL = window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://8000-i003phe7kjhw34lv8ctlm-51754cba.manusvm.computer';
+// Detecta automaticamente a URL da API
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:8000'
+    : `${window.location.protocol}//${window.location.hostname}:8000`;
 
 /**
  * Cliente da API.

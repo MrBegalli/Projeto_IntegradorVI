@@ -9,10 +9,10 @@ from datetime import datetime, timedelta
 
 from .models import Difficulty
 from .utils import evaluate, STATS
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from bots import WeightedBot, MCTSBot, RLBot
+
+from bots.weighted_bot import WeightedBot
+from bots.mcts_bot import MCTSBot
+from bots.rl_bot import RLBot
 
 
 class GameSession:
@@ -245,13 +245,13 @@ class GameManager:
         elif difficulty == Difficulty.MEDIO:
             return MCTSBot(deck, simulations=50)
         elif difficulty == Difficulty.DIFICIL:
-            # Tenta carregar Q-table se existir
+            # Tenta carregar modelo DQN se existir
             import os
             qfile = os.path.join(
                 os.path.dirname(__file__), 
-                "..", "data", "rl_q_table.json"
+                "..", "data", "dqn_model.pth"
             )
-            return RLBot(deck, epsilon=0.0, qfile=qfile if os.path.exists(qfile) else None)
+            return RLBot(deck, STATS, epsilon=0.0, qfile=qfile if os.path.exists(qfile) else None)
         else:
             # Padrão: fácil
             return WeightedBot(deck)

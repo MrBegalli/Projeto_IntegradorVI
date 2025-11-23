@@ -1,140 +1,154 @@
-import csv
+"""
+Sistema de Logs Estruturado para Super Trunfo
+==============================================
+
+Fornece logging consistente e organizado para toda a aplicação.
+"""
+
 import os
+import logging
 from datetime import datetime
-from typing import Optional, Dict, Iterable, Any
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from pathlib import Path
 
-# /d:/codigos/python/Projeto_IntegradorVI/backend/app/logs.py
 
-class RLTrainingCSVLogger:
+class GameLogger:
+    """Logger centralizado para o jogo Super Trunfo."""
+    
+    def __init__(self, name="SuperTrunfo", log_dir="../logs"):
+        """
+        Inicializa o logger.
+        
+        Args:
+            name: Nome do logger
+            log_dir: Diretório para armazenar os logs
+        """
+        self.name = name
+        self.log_dir = Path(log_dir)
+        self.log_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Configura o logger
+        self.logger = logging.getLogger(name)
+        self.logger.setLevel(logging.DEBUG)
+        
+        # Remove handlers existentes para evitar duplicação
+        if self.logger.handlers:
+            self.logger.handlers.clear()
+        
+        # Handler para arquivo (todos os níveis)
+        timestamp = datetime.now().strftime("%Y%m%d")
+        file_handler = logging.FileHandler(
+            self.log_dir / f"game_{timestamp}.log",
+            encoding='utf-8'
+        )
+        file_handler.setLevel(logging.DEBUG)
+        file_formatter = logging.Formatter(
+            '[%(asctime)s] [%(levelname)s] %(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
+        )
+        file_handler.setFormatter(file_formatter)
+        
+        # Handler para console (INFO e acima)
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+        console_formatter = logging.Formatter(
+            '[%(levelname)s] %(message)s'
+        )
+        console_handler.setFormatter(console_formatter)
+        
+        # Adiciona handlers
+        self.logger.addHandler(file_handler)
+        self.logger.addHandler(console_handler)
+    
+    def debug(self, message):
+        """Registra mensagem de debug."""
+        self.logger.debug(message)
+    
+    def info(self, message):
+        """Registra mensagem informativa."""
+        self.logger.info(message)
+    
+    def warning(self, message):
+        """Registra mensagem de aviso."""
+        self.logger.warning(message)
+    
+    def error(self, message):
+        """Registra mensagem de erro."""
+        self.logger.error(message)
+    
+    def critical(self, message):
+        """Registra mensagem crítica."""
+        self.logger.critical(message)
+    
+    def log_game_start(self, player1, player2):
+        """Registra início de um jogo."""
+        self.info("="*60)
+        self.info(f"NOVO JOGO: {player1} vs {player2}")
+        self.info("="*60)
+    
+    def log_round(self, round_num, player, card, stat, result):
+        """Registra uma rodada do jogo."""
+        result_str = "VITÓRIA" if result == 1 else "DERROTA" if result == -1 else "EMPATE"
+        self.info(f"Rodada {round_num}: {player} jogou {card['name']} ({stat}={card.get(stat)}) - {result_str}")
+    
+    def log_game_end(self, winner, score):
+        """Registra fim de um jogo."""
+        self.info(f"FIM DE JOGO: Vencedor = {winner} | Placar = {score}")
+        self.info("="*60 + "\n")
+    
+    def log_training_metrics(self, episode, metrics):
+        """Registra métricas de treinamento."""
+        self.info(f"\n--- Episódio {episode} ---")
+        for key, value in metrics.items():
+            if isinstance(value, float):
+                self.info(f"  {key}: {value:.4f}")
+            else:
+                self.info(f"  {key}: {value}")
+
+
+# Instância global do logger
+_game_logger = None
+
+
+def get_logger(name="SuperTrunfo", log_dir="../logs"):
     """
-    Logger que grava métricas de treinamento (accuracy, precision, recall, f1, loss, etc.) em CSV.
-    Uso:
-      logger = RLTrainingCSVLogger("logs/rl_training.csv")
-      logger.log(epoch=1, step=100, accuracy=0.92, precision=0.90, recall=0.93, f1=0.915, loss=0.2)
-      # ou passar dict de métricas
-      logger.log_metrics_dict({"accuracy":0.92, "f1":0.915}, epoch=1)
+    Retorna a instância global do logger.
+    
+    Args:
+        name: Nome do logger
+        log_dir: Diretório para armazenar os logs
+    
+    Returns:
+        GameLogger: Instância do logger
     """
+    global _game_logger
+    
+    if _game_logger is None:
+        _game_logger = GameLogger(name, log_dir)
+    
+    return _game_logger
 
-    DEFAULT_FIELDS = ["timestamp", "epoch", "step", "accuracy", "precision", "recall", "f1", "loss", "notes"]
 
-    def __init__(self, filepath: str, fieldnames: Optional[Iterable[str]] = None, append: bool = True):
-        self.filepath = filepath
-        self.fieldnames = list(fieldnames) if fieldnames else list(self.DEFAULT_FIELDS)
-        # allow additional custom fields later when logging dicts
-        self._ensure_dir()
-        if not append or not os.path.exists(self.filepath):
-            # create file with header
-            self._write_header()
+# Funções de conveniência
+def debug(message):
+    """Registra mensagem de debug."""
+    get_logger().debug(message)
 
-    def _ensure_dir(self):
-        directory = os.path.dirname(self.filepath)
-        if directory and not os.path.exists(directory):
-            os.makedirs(directory, exist_ok=True)
 
-    def _write_header(self):
-        with open(self.filepath, mode="w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=self.fieldnames)
-            writer.writeheader()
+def info(message):
+    """Registra mensagem informativa."""
+    get_logger().info(message)
 
-    def _maybe_extend_header(self, new_keys: Iterable[str]):
-        new_keys = [k for k in new_keys if k not in self.fieldnames]
-        if not new_keys:
-            return
-        # read existing rows, rewrite with extended header
-        rows = []
-        if os.path.exists(self.filepath):
-            with open(self.filepath, mode="r", newline="", encoding="utf-8") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    rows.append(r)
-        self.fieldnames.extend(new_keys)
-        with open(self.filepath, mode="w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=self.fieldnames)
-            writer.writeheader()
-            for r in rows:
-                writer.writerow(r)
 
-    def _row_base(self, epoch: Optional[int], step: Optional[int], notes: Optional[str]) -> Dict[str, Any]:
-        return {
-            "timestamp": datetime.utcnow().isoformat(timespec="seconds") + "Z",
-            "epoch": epoch if epoch is not None else "",
-            "step": step if step is not None else "",
-            "notes": notes or ""
-        }
+def warning(message):
+    """Registra mensagem de aviso."""
+    get_logger().warning(message)
 
-    def log(self,
-            epoch: Optional[int] = None,
-            step: Optional[int] = None,
-            accuracy: Optional[float] = None,
-            precision: Optional[float] = None,
-            recall: Optional[float] = None,
-            f1: Optional[float] = None,
-            loss: Optional[float] = None,
-            notes: Optional[str] = None,
-            extras: Optional[Dict[str, Any]] = None):
-        """
-        Grava uma linha no CSV com os campos fornecidos.
-        Campos não fornecidos ficam vazios.
-        extras: dicionário de métricas adicionais (serão adicionadas como colunas se necessário).
-        """
-        row = self._row_base(epoch, step, notes)
-        if accuracy is not None:
-            row["accuracy"] = float(accuracy)
-        if precision is not None:
-            row["precision"] = float(precision)
-        if recall is not None:
-            row["recall"] = float(recall)
-        if f1 is not None:
-            row["f1"] = float(f1)
-        if loss is not None:
-            row["loss"] = float(loss)
-        if extras:
-            # convert extras values to simple types (str/float/int)
-            for k, v in extras.items():
-                row[str(k)] = v
 
-        # ensure header contains any extra keys
-        extra_keys = [k for k in (extras.keys() if extras else []) if k not in self.fieldnames]
-        if extra_keys:
-            self._maybe_extend_header(extra_keys)
+def error(message):
+    """Registra mensagem de erro."""
+    get_logger().error(message)
 
-        # write row
-        with open(self.filepath, mode="a", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=self.fieldnames)
-            # fill missing keys with empty string
-            out = {k: row.get(k, "") for k in self.fieldnames}
-            writer.writerow(out)
 
-    def log_metrics_dict(self, metrics: Dict[str, Any], epoch: Optional[int] = None, step: Optional[int] = None, notes: Optional[str] = None):
-        """
-        Grava métricas a partir de um dicionário (ex: {'accuracy':..., 'f1':..., 'recall':...}).
-        """
-        # separate known fields
-        known = {k: metrics.get(k) for k in ("accuracy", "precision", "recall", "f1", "loss")}
-        extras = {k: v for k, v in metrics.items() if k not in known or known[k] is None and k in metrics}
-        # merge known if present
-        self.log(epoch=epoch, step=step, accuracy=known.get("accuracy"),
-                 precision=known.get("precision"), recall=known.get("recall"),
-                 f1=known.get("f1"), loss=known.get("loss"),
-                 notes=notes, extras=extras or None)
-
-    def log_from_sklearn(self, y_true, y_pred, epoch: Optional[int] = None, step: Optional[int] = None, average: str = "binary", notes: Optional[str] = None):
-        """
-        Se sklearn estiver instalado, calcula accuracy, precision, recall, f1 e grava.
-        """
-        try:
-        except Exception as e:
-            raise RuntimeError("sklearn não instalado ou não disponível") from e
-
-        acc = float(accuracy_score(y_true, y_pred))
-        prec = float(precision_score(y_true, y_pred, average=average))
-        rec = float(recall_score(y_true, y_pred, average=average))
-        f1 = float(f1_score(y_true, y_pred, average=average))
-        self.log(epoch=epoch, step=step, accuracy=acc, precision=prec, recall=rec, f1=f1, notes=notes)
-
-# exemplo rápido de uso (remova ou comente em produção)
-if __name__ == "__main__":
-    logger = RLTrainingCSVLogger("../logs/rl_training.csv")
-    logger.log(epoch=1, step=100, accuracy=0.92, precision=0.90, recall=0.93, f1=0.915, loss=0.23, notes="primeiro teste")
-    logger.log_metrics_dict({"accuracy": 0.93, "f1": 0.92, "val_loss": 0.2}, epoch=1, step=200)
+def critical(message):
+    """Registra mensagem crítica."""
+    get_logger().critical(message)
