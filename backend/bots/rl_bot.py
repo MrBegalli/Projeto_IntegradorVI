@@ -232,18 +232,31 @@ class RLBot:
             
             for state_stat_str, actions_data in data.items():
                 # Parse do formato "((1, 2, 3), 'HP')"
-                state_stat_str = state_stat_str.strip('()')
-                parts = state_stat_str.rsplit(", '", 1)
+                # Remove parênteses externos
+                state_stat_str = state_stat_str.strip()
+                if state_stat_str.startswith('(') and state_stat_str.endswith(')'):
+                    state_stat_str = state_stat_str[1:-1]
                 
-                if len(parts) != 2:
+                # Separa estado e stat
+                # Procura pela última vírgula seguida de aspas
+                last_comma_idx = state_stat_str.rfind(", '")
+                if last_comma_idx == -1:
                     continue
                 
-                state_str = parts[0].strip('()')
-                stat = parts[1].strip("')")
+                state_part = state_stat_str[:last_comma_idx]
+                stat_part = state_stat_str[last_comma_idx+3:]  # Pula ", '"
+                
+                # Remove parênteses do estado
+                state_part = state_part.strip('()')
+                # Remove aspas do stat
+                stat = stat_part.strip("')")
                 
                 # Converte string de IDs para tupla
-                if state_str:
-                    state = tuple(map(int, state_str.split(', ')))
+                if state_part:
+                    try:
+                        state = tuple(map(int, state_part.split(', ')))
+                    except ValueError:
+                        continue
                 else:
                     state = ()
                 
@@ -251,8 +264,11 @@ class RLBot:
                 
                 # Carrega Q-valores
                 for action_str, q_value in actions_data.items():
-                    action = int(action_str)
-                    self.Q[state_stat][action] = q_value
+                    try:
+                        action = int(action_str)
+                        self.Q[state_stat][action] = q_value
+                    except ValueError:
+                        continue
             
             print(f"[RLBot] Q-table carregada de {qfile} ({len(self.Q)} estados)")
         

@@ -1,0 +1,2117 @@
+[RLBot] Q-table carregada de /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json (3134 estados)
+[Trainer] RL_Bot inicializado. Estados carregados: 3,134
+
+================================================================================
+TREINAMENTO CONTÍNUO DO RL_BOT
+================================================================================
+Oponente de Treinamento: Medio_Bot
+Tempo limite: 30 minutos
+================================================================================
+
+Episódios: 1,000 | Tempo: 0.9s | Epsilon: 0.100
+  Recompensa Média: 0.105 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 2,000 | Tempo: 1.0s | Epsilon: 0.100
+  Recompensa Média: 0.116 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 3,000 | Tempo: 1.0s | Epsilon: 0.100
+  Recompensa Média: 0.021 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 4,000 | Tempo: 1.0s | Epsilon: 0.100
+  Recompensa Média: 0.057 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 5,000 | Tempo: 1.0s | Epsilon: 0.100
+  Recompensa Média: -0.216 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 6,000 | Tempo: 0.9s | Epsilon: 0.100
+  Recompensa Média: -0.004 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 7,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: -0.059 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 8,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: -0.021 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 9,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: 0.053 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 10,000 | Tempo: 1.0s | Epsilon: 0.099
+  Recompensa Média: -0.066 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 11,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: 0.142 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 12,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: 0.066 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 13,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: -0.029 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 14,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: -0.033 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 15,000 | Tempo: 1.0s | Epsilon: 0.099
+  Recompensa Média: 0.267 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 16,000 | Tempo: 0.9s | Epsilon: 0.099
+  Recompensa Média: 0.195 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 17,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: -0.148 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 18,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: 0.052 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 19,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: 0.092 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 20,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: 0.063 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 21,000 | Tempo: 0.9s | Epsilon: 0.098
+  Recompensa Média: 0.324 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 22,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: -0.062 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 23,000 | Tempo: 0.9s | Epsilon: 0.098
+  Recompensa Média: -0.011 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 24,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: 0.278 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 25,000 | Tempo: 1.0s | Epsilon: 0.098
+  Recompensa Média: 0.037 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 26,000 | Tempo: 1.1s | Epsilon: 0.098
+  Recompensa Média: 0.280 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 27,000 | Tempo: 1.0s | Epsilon: 0.097
+  Recompensa Média: -0.184 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 28,000 | Tempo: 1.0s | Epsilon: 0.097
+  Recompensa Média: -0.048 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 29,000 | Tempo: 0.9s | Epsilon: 0.097
+  Recompensa Média: -0.053 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 30,000 | Tempo: 1.0s | Epsilon: 0.097
+  Recompensa Média: -0.335 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 31,000 | Tempo: 0.9s | Epsilon: 0.097
+  Recompensa Média: -0.084 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 32,000 | Tempo: 1.0s | Epsilon: 0.097
+  Recompensa Média: 0.157 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 33,000 | Tempo: 1.0s | Epsilon: 0.097
+  Recompensa Média: -0.083 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 34,000 | Tempo: 0.9s | Epsilon: 0.097
+  Recompensa Média: 0.004 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 35,000 | Tempo: 0.9s | Epsilon: 0.097
+  Recompensa Média: 0.140 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 36,000 | Tempo: 0.9s | Epsilon: 0.097
+  Recompensa Média: 0.553 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 37,000 | Tempo: 0.9s | Epsilon: 0.096
+  Recompensa Média: 0.097 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 38,000 | Tempo: 1.0s | Epsilon: 0.096
+  Recompensa Média: -0.132 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 39,000 | Tempo: 1.0s | Epsilon: 0.096
+  Recompensa Média: 0.081 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 40,000 | Tempo: 0.9s | Epsilon: 0.096
+  Recompensa Média: 0.111 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 41,000 | Tempo: 0.9s | Epsilon: 0.096
+  Recompensa Média: 0.077 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 42,000 | Tempo: 0.9s | Epsilon: 0.096
+  Recompensa Média: 0.249 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 43,000 | Tempo: 0.9s | Epsilon: 0.096
+  Recompensa Média: 0.307 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 44,000 | Tempo: 0.9s | Epsilon: 0.096
+  Recompensa Média: 0.065 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 45,000 | Tempo: 1.0s | Epsilon: 0.096
+  Recompensa Média: -0.043 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 46,000 | Tempo: 1.0s | Epsilon: 0.096
+  Recompensa Média: 0.028 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 47,000 | Tempo: 0.9s | Epsilon: 0.095
+  Recompensa Média: 0.105 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 48,000 | Tempo: 0.9s | Epsilon: 0.095
+  Recompensa Média: 0.153 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 49,000 | Tempo: 1.0s | Epsilon: 0.095
+  Recompensa Média: -0.026 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 50,000 | Tempo: 1.0s | Epsilon: 0.095
+  Recompensa Média: -0.222 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 51,000 | Tempo: 0.9s | Epsilon: 0.095
+  Recompensa Média: 0.294 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 52,000 | Tempo: 1.0s | Epsilon: 0.095
+  Recompensa Média: -0.108 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 53,000 | Tempo: 1.0s | Epsilon: 0.095
+  Recompensa Média: 0.013 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 54,000 | Tempo: 0.9s | Epsilon: 0.095
+  Recompensa Média: 0.299 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 55,000 | Tempo: 1.0s | Epsilon: 0.095
+  Recompensa Média: -0.314 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 56,000 | Tempo: 0.9s | Epsilon: 0.095
+  Recompensa Média: -0.018 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 57,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.292 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 58,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.018 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 59,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.069 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 60,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.531 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 61,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: -0.043 | Win Rate vs Medio_Bot: 33.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 62,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.079 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 63,000 | Tempo: 1.0s | Epsilon: 0.094
+  Recompensa Média: -0.121 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 64,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.434 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 65,000 | Tempo: 0.9s | Epsilon: 0.094
+  Recompensa Média: 0.300 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 66,000 | Tempo: 1.0s | Epsilon: 0.094
+  Recompensa Média: -0.105 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 67,000 | Tempo: 1.0s | Epsilon: 0.093
+  Recompensa Média: 0.237 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 68,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: 0.348 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 69,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: 0.426 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 70,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: -0.151 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 71,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: 0.430 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 72,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: 0.357 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 73,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: -0.035 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 74,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: 0.273 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 75,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: 0.111 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 76,000 | Tempo: 0.9s | Epsilon: 0.093
+  Recompensa Média: -0.148 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 77,000 | Tempo: 0.9s | Epsilon: 0.092
+  Recompensa Média: 0.348 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 78,000 | Tempo: 0.9s | Epsilon: 0.092
+  Recompensa Média: -0.137 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 79,000 | Tempo: 1.0s | Epsilon: 0.092
+  Recompensa Média: 0.082 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 80,000 | Tempo: 0.9s | Epsilon: 0.092
+  Recompensa Média: 0.174 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 81,000 | Tempo: 1.0s | Epsilon: 0.092
+  Recompensa Média: 0.388 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 82,000 | Tempo: 1.0s | Epsilon: 0.092
+  Recompensa Média: -0.042 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 83,000 | Tempo: 0.9s | Epsilon: 0.092
+  Recompensa Média: 0.149 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 84,000 | Tempo: 0.9s | Epsilon: 0.092
+  Recompensa Média: 0.050 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 85,000 | Tempo: 1.0s | Epsilon: 0.092
+  Recompensa Média: -0.234 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 86,000 | Tempo: 0.9s | Epsilon: 0.092
+  Recompensa Média: 0.258 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 87,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: -0.110 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 88,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: 0.133 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 89,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: 0.218 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 90,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: 0.378 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 91,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: 0.166 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 92,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: -0.288 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 93,000 | Tempo: 1.0s | Epsilon: 0.091
+  Recompensa Média: -0.136 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 94,000 | Tempo: 1.0s | Epsilon: 0.091
+  Recompensa Média: -0.043 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 95,000 | Tempo: 1.1s | Epsilon: 0.091
+  Recompensa Média: 0.346 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 96,000 | Tempo: 0.9s | Epsilon: 0.091
+  Recompensa Média: 0.064 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 97,000 | Tempo: 0.9s | Epsilon: 0.090
+  Recompensa Média: 0.337 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 98,000 | Tempo: 1.0s | Epsilon: 0.090
+  Recompensa Média: -0.151 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 99,000 | Tempo: 0.9s | Epsilon: 0.090
+  Recompensa Média: -0.051 | Win Rate vs Medio_Bot: 40.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 100,000 | Tempo: 1.0s | Epsilon: 0.090
+  Recompensa Média: -0.101 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 101,000 | Tempo: 1.0s | Epsilon: 0.090
+  Recompensa Média: 0.217 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 102,000 | Tempo: 0.9s | Epsilon: 0.090
+  Recompensa Média: -0.038 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 103,000 | Tempo: 0.9s | Epsilon: 0.090
+  Recompensa Média: -0.037 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 104,000 | Tempo: 1.0s | Epsilon: 0.090
+  Recompensa Média: -0.017 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 105,000 | Tempo: 1.0s | Epsilon: 0.090
+  Recompensa Média: -0.262 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 106,000 | Tempo: 0.9s | Epsilon: 0.090
+  Recompensa Média: 0.093 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 107,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.044 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 108,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.044 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 109,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.045 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 110,000 | Tempo: 1.0s | Epsilon: 0.089
+  Recompensa Média: 0.456 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 111,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.329 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 112,000 | Tempo: 1.0s | Epsilon: 0.089
+  Recompensa Média: 0.259 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 113,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.006 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 114,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.069 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 115,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.404 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 116,000 | Tempo: 0.9s | Epsilon: 0.089
+  Recompensa Média: 0.484 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 117,000 | Tempo: 1.0s | Epsilon: 0.088
+  Recompensa Média: 0.132 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 118,000 | Tempo: 1.0s | Epsilon: 0.088
+  Recompensa Média: -0.001 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 119,000 | Tempo: 1.0s | Epsilon: 0.088
+  Recompensa Média: -0.119 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 120,000 | Tempo: 1.0s | Epsilon: 0.088
+  Recompensa Média: 0.162 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 121,000 | Tempo: 0.9s | Epsilon: 0.088
+  Recompensa Média: 0.408 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 122,000 | Tempo: 1.0s | Epsilon: 0.088
+  Recompensa Média: 0.337 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 123,000 | Tempo: 0.9s | Epsilon: 0.088
+  Recompensa Média: 0.176 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 124,000 | Tempo: 0.9s | Epsilon: 0.088
+  Recompensa Média: 0.387 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 125,000 | Tempo: 0.9s | Epsilon: 0.088
+  Recompensa Média: 0.245 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 126,000 | Tempo: 0.9s | Epsilon: 0.088
+  Recompensa Média: -0.128 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 127,000 | Tempo: 1.1s | Epsilon: 0.087
+  Recompensa Média: -0.199 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 128,000 | Tempo: 1.0s | Epsilon: 0.087
+  Recompensa Média: 0.302 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 129,000 | Tempo: 0.9s | Epsilon: 0.087
+  Recompensa Média: 0.321 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 130,000 | Tempo: 0.9s | Epsilon: 0.087
+  Recompensa Média: 0.478 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 131,000 | Tempo: 1.0s | Epsilon: 0.087
+  Recompensa Média: 0.069 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 132,000 | Tempo: 1.0s | Epsilon: 0.087
+  Recompensa Média: 0.090 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 133,000 | Tempo: 1.0s | Epsilon: 0.087
+  Recompensa Média: 0.050 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 134,000 | Tempo: 0.9s | Epsilon: 0.087
+  Recompensa Média: 0.266 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 135,000 | Tempo: 1.0s | Epsilon: 0.087
+  Recompensa Média: 0.486 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 136,000 | Tempo: 0.9s | Epsilon: 0.087
+  Recompensa Média: 0.209 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 137,000 | Tempo: 0.9s | Epsilon: 0.086
+  Recompensa Média: 0.335 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 138,000 | Tempo: 1.0s | Epsilon: 0.086
+  Recompensa Média: 0.015 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 139,000 | Tempo: 0.9s | Epsilon: 0.086
+  Recompensa Média: 0.383 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 140,000 | Tempo: 1.0s | Epsilon: 0.086
+  Recompensa Média: -0.124 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 141,000 | Tempo: 1.0s | Epsilon: 0.086
+  Recompensa Média: -0.053 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 142,000 | Tempo: 0.9s | Epsilon: 0.086
+  Recompensa Média: 0.334 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 143,000 | Tempo: 1.0s | Epsilon: 0.086
+  Recompensa Média: 0.104 | Win Rate vs Medio_Bot: 67.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 144,000 | Tempo: 0.9s | Epsilon: 0.086
+  Recompensa Média: 0.103 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 145,000 | Tempo: 1.0s | Epsilon: 0.086
+  Recompensa Média: -0.258 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 146,000 | Tempo: 0.9s | Epsilon: 0.086
+  Recompensa Média: 0.370 | Win Rate vs Medio_Bot: 40.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 147,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.247 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 148,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.309 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 149,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.205 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 150,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.057 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 151,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.390 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 152,000 | Tempo: 0.9s | Epsilon: 0.085
+  Recompensa Média: 0.323 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 153,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.111 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 154,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.440 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 155,000 | Tempo: 0.9s | Epsilon: 0.085
+  Recompensa Média: 0.183 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 156,000 | Tempo: 1.0s | Epsilon: 0.085
+  Recompensa Média: 0.311 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 157,000 | Tempo: 1.1s | Epsilon: 0.084
+  Recompensa Média: 0.066 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 158,000 | Tempo: 1.0s | Epsilon: 0.084
+  Recompensa Média: 0.043 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 159,000 | Tempo: 1.0s | Epsilon: 0.084
+  Recompensa Média: 0.008 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 160,000 | Tempo: 0.9s | Epsilon: 0.084
+  Recompensa Média: 0.538 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 161,000 | Tempo: 1.0s | Epsilon: 0.084
+  Recompensa Média: 0.324 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 162,000 | Tempo: 0.9s | Epsilon: 0.084
+  Recompensa Média: 0.272 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 163,000 | Tempo: 1.0s | Epsilon: 0.084
+  Recompensa Média: 0.189 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 164,000 | Tempo: 0.9s | Epsilon: 0.084
+  Recompensa Média: 0.330 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 165,000 | Tempo: 1.0s | Epsilon: 0.084
+  Recompensa Média: 0.399 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 166,000 | Tempo: 1.0s | Epsilon: 0.084
+  Recompensa Média: 0.089 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 167,000 | Tempo: 1.0s | Epsilon: 0.083
+  Recompensa Média: 0.377 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 168,000 | Tempo: 0.9s | Epsilon: 0.083
+  Recompensa Média: 0.497 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 169,000 | Tempo: 0.9s | Epsilon: 0.083
+  Recompensa Média: 0.278 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 170,000 | Tempo: 0.9s | Epsilon: 0.083
+  Recompensa Média: 0.214 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 171,000 | Tempo: 1.0s | Epsilon: 0.083
+  Recompensa Média: 0.121 | Win Rate vs Medio_Bot: 61.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 172,000 | Tempo: 1.1s | Epsilon: 0.083
+  Recompensa Média: 0.440 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 173,000 | Tempo: 1.0s | Epsilon: 0.083
+  Recompensa Média: 0.428 | Win Rate vs Medio_Bot: 62.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 174,000 | Tempo: 0.9s | Epsilon: 0.083
+  Recompensa Média: 0.535 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 175,000 | Tempo: 1.0s | Epsilon: 0.083
+  Recompensa Média: 0.340 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 176,000 | Tempo: 1.0s | Epsilon: 0.083
+  Recompensa Média: 0.230 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 177,000 | Tempo: 1.1s | Epsilon: 0.082
+  Recompensa Média: 0.242 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 178,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: 0.556 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 179,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: 0.233 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 180,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: -0.183 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 181,000 | Tempo: 1.1s | Epsilon: 0.082
+  Recompensa Média: 0.043 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 182,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: 0.120 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 183,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: 0.180 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 184,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: 0.205 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 185,000 | Tempo: 0.9s | Epsilon: 0.082
+  Recompensa Média: 0.275 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 186,000 | Tempo: 1.0s | Epsilon: 0.082
+  Recompensa Média: 0.126 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 187,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.326 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 188,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: -0.067 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 189,000 | Tempo: 0.9s | Epsilon: 0.081
+  Recompensa Média: 0.277 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 190,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.306 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 191,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.086 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 192,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.054 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 193,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.052 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 194,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.010 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 195,000 | Tempo: 1.0s | Epsilon: 0.081
+  Recompensa Média: 0.195 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 196,000 | Tempo: 0.9s | Epsilon: 0.081
+  Recompensa Média: 0.306 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 197,000 | Tempo: 0.9s | Epsilon: 0.080
+  Recompensa Média: 0.445 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 198,000 | Tempo: 1.0s | Epsilon: 0.080
+  Recompensa Média: -0.093 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 199,000 | Tempo: 1.0s | Epsilon: 0.080
+  Recompensa Média: 0.072 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 200,000 | Tempo: 1.0s | Epsilon: 0.080
+  Recompensa Média: 0.014 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 201,000 | Tempo: 1.0s | Epsilon: 0.080
+  Recompensa Média: 0.083 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 202,000 | Tempo: 0.9s | Epsilon: 0.080
+  Recompensa Média: 0.151 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 203,000 | Tempo: 0.9s | Epsilon: 0.080
+  Recompensa Média: 0.043 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 204,000 | Tempo: 0.9s | Epsilon: 0.080
+  Recompensa Média: 0.151 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 205,000 | Tempo: 0.9s | Epsilon: 0.080
+  Recompensa Média: 0.281 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 206,000 | Tempo: 1.0s | Epsilon: 0.080
+  Recompensa Média: 0.030 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 207,000 | Tempo: 0.9s | Epsilon: 0.079
+  Recompensa Média: 0.277 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 208,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: 0.080 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 209,000 | Tempo: 0.9s | Epsilon: 0.079
+  Recompensa Média: 0.399 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 210,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: 0.056 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 211,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: -0.122 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 212,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: 0.261 | Win Rate vs Medio_Bot: 40.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 213,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: 0.410 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 214,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: 0.268 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 215,000 | Tempo: 1.0s | Epsilon: 0.079
+  Recompensa Média: 0.154 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 216,000 | Tempo: 0.9s | Epsilon: 0.079
+  Recompensa Média: 0.192 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 217,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.447 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 218,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.314 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 219,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.276 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 220,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.295 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 221,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.494 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 222,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.175 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 223,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.407 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 224,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.200 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 225,000 | Tempo: 1.0s | Epsilon: 0.078
+  Recompensa Média: -0.092 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 226,000 | Tempo: 0.9s | Epsilon: 0.078
+  Recompensa Média: 0.427 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 227,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.250 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 228,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.364 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 229,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.379 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 230,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.285 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 231,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.606 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 232,000 | Tempo: 1.0s | Epsilon: 0.077
+  Recompensa Média: -0.065 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 233,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.603 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 234,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: 0.240 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 235,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: -0.052 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 236,000 | Tempo: 0.9s | Epsilon: 0.077
+  Recompensa Média: -0.116 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 237,000 | Tempo: 0.9s | Epsilon: 0.076
+  Recompensa Média: 0.481 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 238,000 | Tempo: 1.0s | Epsilon: 0.076
+  Recompensa Média: 0.422 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 239,000 | Tempo: 1.0s | Epsilon: 0.076
+  Recompensa Média: 0.465 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 240,000 | Tempo: 1.0s | Epsilon: 0.076
+  Recompensa Média: -0.026 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 241,000 | Tempo: 0.9s | Epsilon: 0.076
+  Recompensa Média: 0.199 | Win Rate vs Medio_Bot: 60.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 242,000 | Tempo: 0.9s | Epsilon: 0.076
+  Recompensa Média: 0.470 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 243,000 | Tempo: 1.0s | Epsilon: 0.076
+  Recompensa Média: 0.236 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 244,000 | Tempo: 1.0s | Epsilon: 0.076
+  Recompensa Média: 0.226 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 245,000 | Tempo: 0.9s | Epsilon: 0.076
+  Recompensa Média: 0.366 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 246,000 | Tempo: 1.0s | Epsilon: 0.076
+  Recompensa Média: -0.015 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 247,000 | Tempo: 1.0s | Epsilon: 0.075
+  Recompensa Média: 0.032 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 248,000 | Tempo: 0.9s | Epsilon: 0.075
+  Recompensa Média: 0.559 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 249,000 | Tempo: 1.0s | Epsilon: 0.075
+  Recompensa Média: -0.068 | Win Rate vs Medio_Bot: 40.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 250,000 | Tempo: 1.0s | Epsilon: 0.075
+  Recompensa Média: -0.048 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 251,000 | Tempo: 0.9s | Epsilon: 0.075
+  Recompensa Média: 0.546 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 252,000 | Tempo: 1.0s | Epsilon: 0.075
+  Recompensa Média: 0.132 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 253,000 | Tempo: 0.9s | Epsilon: 0.075
+  Recompensa Média: 0.338 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 254,000 | Tempo: 1.0s | Epsilon: 0.075
+  Recompensa Média: 0.298 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 255,000 | Tempo: 1.0s | Epsilon: 0.075
+  Recompensa Média: 0.162 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 256,000 | Tempo: 1.0s | Epsilon: 0.074
+  Recompensa Média: 0.082 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 257,000 | Tempo: 1.0s | Epsilon: 0.074
+  Recompensa Média: 0.142 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 258,000 | Tempo: 1.0s | Epsilon: 0.074
+  Recompensa Média: -0.142 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 259,000 | Tempo: 1.0s | Epsilon: 0.074
+  Recompensa Média: 0.170 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 260,000 | Tempo: 1.0s | Epsilon: 0.074
+  Recompensa Média: 0.152 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 261,000 | Tempo: 0.9s | Epsilon: 0.074
+  Recompensa Média: 0.283 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 262,000 | Tempo: 1.0s | Epsilon: 0.074
+  Recompensa Média: 0.106 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 263,000 | Tempo: 0.9s | Epsilon: 0.074
+  Recompensa Média: 0.167 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 264,000 | Tempo: 0.9s | Epsilon: 0.074
+  Recompensa Média: 0.208 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 265,000 | Tempo: 0.9s | Epsilon: 0.074
+  Recompensa Média: 0.204 | Win Rate vs Medio_Bot: 59.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 266,000 | Tempo: 1.0s | Epsilon: 0.073
+  Recompensa Média: 0.053 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 267,000 | Tempo: 1.0s | Epsilon: 0.073
+  Recompensa Média: -0.052 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 268,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.172 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 269,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.448 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 270,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.066 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 271,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.063 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 272,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.127 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 273,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.221 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 274,000 | Tempo: 1.0s | Epsilon: 0.073
+  Recompensa Média: 0.330 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 275,000 | Tempo: 0.9s | Epsilon: 0.073
+  Recompensa Média: 0.502 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 276,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: 0.237 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 277,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: 0.140 | Win Rate vs Medio_Bot: 33.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 278,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: 0.135 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 279,000 | Tempo: 1.0s | Epsilon: 0.072
+  Recompensa Média: -0.132 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 280,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: -0.033 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 281,000 | Tempo: 1.0s | Epsilon: 0.072
+  Recompensa Média: 0.176 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 282,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: 0.525 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 283,000 | Tempo: 1.0s | Epsilon: 0.072
+  Recompensa Média: -0.070 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 284,000 | Tempo: 1.0s | Epsilon: 0.072
+  Recompensa Média: 0.074 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 285,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: 0.248 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 286,000 | Tempo: 0.9s | Epsilon: 0.072
+  Recompensa Média: 0.364 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 287,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: 0.266 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 288,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: 0.028 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 289,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: 0.107 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 290,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: 0.225 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 291,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: 0.184 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 292,000 | Tempo: 1.0s | Epsilon: 0.071
+  Recompensa Média: -0.017 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 293,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: -0.189 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 294,000 | Tempo: 0.9s | Epsilon: 0.071
+  Recompensa Média: 0.024 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 295,000 | Tempo: 1.0s | Epsilon: 0.071
+  Recompensa Média: 0.159 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 296,000 | Tempo: 1.0s | Epsilon: 0.071
+  Recompensa Média: 0.308 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 297,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.111 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 298,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.010 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 299,000 | Tempo: 1.0s | Epsilon: 0.070
+  Recompensa Média: 0.003 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 300,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.095 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 301,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.371 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 302,000 | Tempo: 1.0s | Epsilon: 0.070
+  Recompensa Média: 0.190 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 303,000 | Tempo: 1.0s | Epsilon: 0.070
+  Recompensa Média: 0.044 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 304,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.238 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 305,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.154 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 306,000 | Tempo: 0.9s | Epsilon: 0.070
+  Recompensa Média: 0.196 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 307,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.120 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 308,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.116 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 309,000 | Tempo: 1.0s | Epsilon: 0.069
+  Recompensa Média: -0.051 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 310,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: -0.046 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 311,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.124 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 312,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.401 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 313,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.183 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 314,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.158 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 315,000 | Tempo: 0.9s | Epsilon: 0.069
+  Recompensa Média: 0.298 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 316,000 | Tempo: 1.0s | Epsilon: 0.069
+  Recompensa Média: -0.005 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 317,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: -0.080 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 318,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: 0.225 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 319,000 | Tempo: 1.0s | Epsilon: 0.068
+  Recompensa Média: -0.109 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 320,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: 0.223 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 321,000 | Tempo: 1.0s | Epsilon: 0.068
+  Recompensa Média: 0.223 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 322,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: 0.061 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 323,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: -0.021 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 324,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: 0.071 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 325,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: 0.076 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 326,000 | Tempo: 0.9s | Epsilon: 0.068
+  Recompensa Média: 0.304 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 327,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.358 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 328,000 | Tempo: 1.0s | Epsilon: 0.067
+  Recompensa Média: 0.151 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 329,000 | Tempo: 1.0s | Epsilon: 0.067
+  Recompensa Média: -0.105 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 330,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.225 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 331,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: -0.119 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 332,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.318 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 333,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.351 | Win Rate vs Medio_Bot: 59.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 334,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.132 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 335,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.159 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 336,000 | Tempo: 0.9s | Epsilon: 0.067
+  Recompensa Média: 0.069 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 337,000 | Tempo: 0.9s | Epsilon: 0.066
+  Recompensa Média: 0.109 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 338,000 | Tempo: 0.9s | Epsilon: 0.066
+  Recompensa Média: 0.186 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 339,000 | Tempo: 0.9s | Epsilon: 0.066
+  Recompensa Média: -0.080 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 340,000 | Tempo: 0.9s | Epsilon: 0.066
+  Recompensa Média: 0.329 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 341,000 | Tempo: 1.0s | Epsilon: 0.066
+  Recompensa Média: 0.570 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 342,000 | Tempo: 1.0s | Epsilon: 0.066
+  Recompensa Média: 0.122 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 343,000 | Tempo: 0.9s | Epsilon: 0.066
+  Recompensa Média: 0.558 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 344,000 | Tempo: 1.0s | Epsilon: 0.066
+  Recompensa Média: 0.218 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 345,000 | Tempo: 0.9s | Epsilon: 0.066
+  Recompensa Média: 0.245 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 346,000 | Tempo: 1.0s | Epsilon: 0.066
+  Recompensa Média: 0.030 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 347,000 | Tempo: 1.0s | Epsilon: 0.065
+  Recompensa Média: -0.001 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 348,000 | Tempo: 0.9s | Epsilon: 0.065
+  Recompensa Média: 0.238 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 349,000 | Tempo: 1.0s | Epsilon: 0.065
+  Recompensa Média: 0.173 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 350,000 | Tempo: 1.0s | Epsilon: 0.065
+  Recompensa Média: -0.014 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 351,000 | Tempo: 1.0s | Epsilon: 0.065
+  Recompensa Média: -0.090 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 352,000 | Tempo: 0.9s | Epsilon: 0.065
+  Recompensa Média: 0.204 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 353,000 | Tempo: 1.0s | Epsilon: 0.065
+  Recompensa Média: 0.180 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 354,000 | Tempo: 0.9s | Epsilon: 0.065
+  Recompensa Média: 0.292 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 355,000 | Tempo: 0.9s | Epsilon: 0.065
+  Recompensa Média: 0.233 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 356,000 | Tempo: 0.9s | Epsilon: 0.065
+  Recompensa Média: 0.439 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 357,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.178 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 358,000 | Tempo: 1.0s | Epsilon: 0.064
+  Recompensa Média: 0.186 | Win Rate vs Medio_Bot: 59.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 359,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.277 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 360,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.108 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 361,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.189 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 362,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.367 | Win Rate vs Medio_Bot: 56.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 363,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.120 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 364,000 | Tempo: 0.9s | Epsilon: 0.064
+  Recompensa Média: 0.518 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 365,000 | Tempo: 1.0s | Epsilon: 0.064
+  Recompensa Média: -0.134 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 366,000 | Tempo: 1.0s | Epsilon: 0.064
+  Recompensa Média: 0.087 | Win Rate vs Medio_Bot: 40.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 367,000 | Tempo: 1.0s | Epsilon: 0.063
+  Recompensa Média: 0.271 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 368,000 | Tempo: 0.9s | Epsilon: 0.063
+  Recompensa Média: 0.258 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 369,000 | Tempo: 1.0s | Epsilon: 0.063
+  Recompensa Média: 0.519 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 370,000 | Tempo: 1.0s | Epsilon: 0.063
+  Recompensa Média: 0.553 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 371,000 | Tempo: 1.0s | Epsilon: 0.063
+  Recompensa Média: 0.362 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 372,000 | Tempo: 0.9s | Epsilon: 0.063
+  Recompensa Média: 0.709 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 373,000 | Tempo: 1.0s | Epsilon: 0.063
+  Recompensa Média: 0.320 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 374,000 | Tempo: 1.0s | Epsilon: 0.063
+  Recompensa Média: 0.304 | Win Rate vs Medio_Bot: 59.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 375,000 | Tempo: 1.1s | Epsilon: 0.063
+  Recompensa Média: 0.185 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 376,000 | Tempo: 1.0s | Epsilon: 0.062
+  Recompensa Média: -0.424 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 377,000 | Tempo: 1.0s | Epsilon: 0.062
+  Recompensa Média: 0.507 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 378,000 | Tempo: 1.0s | Epsilon: 0.062
+  Recompensa Média: 0.401 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 379,000 | Tempo: 1.0s | Epsilon: 0.062
+  Recompensa Média: -0.338 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 380,000 | Tempo: 0.9s | Epsilon: 0.062
+  Recompensa Média: 0.671 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 381,000 | Tempo: 1.0s | Epsilon: 0.062
+  Recompensa Média: 0.409 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 382,000 | Tempo: 0.9s | Epsilon: 0.062
+  Recompensa Média: 0.104 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 383,000 | Tempo: 0.9s | Epsilon: 0.062
+  Recompensa Média: -0.137 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 384,000 | Tempo: 0.9s | Epsilon: 0.062
+  Recompensa Média: 0.428 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 385,000 | Tempo: 0.9s | Epsilon: 0.062
+  Recompensa Média: 0.249 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 386,000 | Tempo: 0.9s | Epsilon: 0.061
+  Recompensa Média: 0.465 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 387,000 | Tempo: 0.9s | Epsilon: 0.061
+  Recompensa Média: 0.175 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 388,000 | Tempo: 0.9s | Epsilon: 0.061
+  Recompensa Média: 0.133 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 389,000 | Tempo: 0.9s | Epsilon: 0.061
+  Recompensa Média: 0.037 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 390,000 | Tempo: 0.9s | Epsilon: 0.061
+  Recompensa Média: 0.101 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 391,000 | Tempo: 1.0s | Epsilon: 0.061
+  Recompensa Média: -0.180 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 392,000 | Tempo: 1.0s | Epsilon: 0.061
+  Recompensa Média: 0.181 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 393,000 | Tempo: 1.0s | Epsilon: 0.061
+  Recompensa Média: -0.199 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 394,000 | Tempo: 0.9s | Epsilon: 0.061
+  Recompensa Média: 0.449 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 395,000 | Tempo: 1.0s | Epsilon: 0.061
+  Recompensa Média: 0.032 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 396,000 | Tempo: 0.9s | Epsilon: 0.060
+  Recompensa Média: 0.259 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 397,000 | Tempo: 1.0s | Epsilon: 0.060
+  Recompensa Média: 0.118 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 398,000 | Tempo: 0.9s | Epsilon: 0.060
+  Recompensa Média: 0.135 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 399,000 | Tempo: 1.0s | Epsilon: 0.060
+  Recompensa Média: 0.242 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 400,000 | Tempo: 1.0s | Epsilon: 0.060
+  Recompensa Média: 0.297 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 401,000 | Tempo: 1.0s | Epsilon: 0.060
+  Recompensa Média: 0.376 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 402,000 | Tempo: 0.9s | Epsilon: 0.060
+  Recompensa Média: 0.354 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 403,000 | Tempo: 0.9s | Epsilon: 0.060
+  Recompensa Média: 0.394 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 404,000 | Tempo: 1.0s | Epsilon: 0.060
+  Recompensa Média: -0.141 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 405,000 | Tempo: 1.0s | Epsilon: 0.060
+  Recompensa Média: 0.412 | Win Rate vs Medio_Bot: 40.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 406,000 | Tempo: 1.0s | Epsilon: 0.059
+  Recompensa Média: 0.352 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 407,000 | Tempo: 1.0s | Epsilon: 0.059
+  Recompensa Média: 0.213 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 408,000 | Tempo: 0.9s | Epsilon: 0.059
+  Recompensa Média: 0.673 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 409,000 | Tempo: 0.9s | Epsilon: 0.059
+  Recompensa Média: 0.381 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 410,000 | Tempo: 1.0s | Epsilon: 0.059
+  Recompensa Média: 0.029 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 411,000 | Tempo: 1.0s | Epsilon: 0.059
+  Recompensa Média: -0.173 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 412,000 | Tempo: 0.9s | Epsilon: 0.059
+  Recompensa Média: -0.108 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 413,000 | Tempo: 0.9s | Epsilon: 0.059
+  Recompensa Média: 0.321 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 414,000 | Tempo: 0.9s | Epsilon: 0.059
+  Recompensa Média: 0.452 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 415,000 | Tempo: 1.0s | Epsilon: 0.059
+  Recompensa Média: -0.226 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 416,000 | Tempo: 1.0s | Epsilon: 0.058
+  Recompensa Média: 0.102 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 417,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.120 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 418,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.387 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 419,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.270 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 420,000 | Tempo: 1.0s | Epsilon: 0.058
+  Recompensa Média: -0.015 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 421,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.351 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 422,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.375 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 423,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.457 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 424,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.146 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 425,000 | Tempo: 0.9s | Epsilon: 0.058
+  Recompensa Média: 0.215 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 426,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.208 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 427,000 | Tempo: 1.0s | Epsilon: 0.057
+  Recompensa Média: -0.203 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 428,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.190 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 429,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.234 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 430,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.391 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 431,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: -0.070 | Win Rate vs Medio_Bot: 36.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 432,000 | Tempo: 1.0s | Epsilon: 0.057
+  Recompensa Média: 0.119 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 433,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.329 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 434,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.323 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 435,000 | Tempo: 0.9s | Epsilon: 0.057
+  Recompensa Média: 0.357 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 436,000 | Tempo: 0.9s | Epsilon: 0.056
+  Recompensa Média: 0.377 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 437,000 | Tempo: 0.9s | Epsilon: 0.056
+  Recompensa Média: -0.077 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 438,000 | Tempo: 1.0s | Epsilon: 0.056
+  Recompensa Média: -0.137 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 439,000 | Tempo: 1.0s | Epsilon: 0.056
+  Recompensa Média: -0.124 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 440,000 | Tempo: 0.9s | Epsilon: 0.056
+  Recompensa Média: 0.207 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 441,000 | Tempo: 1.0s | Epsilon: 0.056
+  Recompensa Média: 0.026 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 442,000 | Tempo: 0.9s | Epsilon: 0.056
+  Recompensa Média: 0.571 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 443,000 | Tempo: 1.0s | Epsilon: 0.056
+  Recompensa Média: 0.183 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 444,000 | Tempo: 1.0s | Epsilon: 0.056
+  Recompensa Média: -0.147 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 445,000 | Tempo: 1.0s | Epsilon: 0.056
+  Recompensa Média: 0.334 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 446,000 | Tempo: 1.0s | Epsilon: 0.055
+  Recompensa Média: 0.180 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 447,000 | Tempo: 1.0s | Epsilon: 0.055
+  Recompensa Média: -0.217 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 448,000 | Tempo: 0.9s | Epsilon: 0.055
+  Recompensa Média: 0.050 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 449,000 | Tempo: 1.0s | Epsilon: 0.055
+  Recompensa Média: 0.102 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 450,000 | Tempo: 1.0s | Epsilon: 0.055
+  Recompensa Média: 0.358 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 451,000 | Tempo: 1.0s | Epsilon: 0.055
+  Recompensa Média: 0.406 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 452,000 | Tempo: 0.9s | Epsilon: 0.055
+  Recompensa Média: 0.114 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 453,000 | Tempo: 0.9s | Epsilon: 0.055
+  Recompensa Média: 0.553 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 454,000 | Tempo: 0.9s | Epsilon: 0.055
+  Recompensa Média: 0.370 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 455,000 | Tempo: 0.9s | Epsilon: 0.055
+  Recompensa Média: 0.060 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 456,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.082 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 457,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.077 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 458,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.011 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 459,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.025 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 460,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.269 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 461,000 | Tempo: 1.0s | Epsilon: 0.054
+  Recompensa Média: -0.150 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 462,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.175 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 463,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.246 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 464,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.465 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 465,000 | Tempo: 0.9s | Epsilon: 0.054
+  Recompensa Média: 0.213 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 466,000 | Tempo: 0.9s | Epsilon: 0.053
+  Recompensa Média: 0.456 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 467,000 | Tempo: 0.9s | Epsilon: 0.053
+  Recompensa Média: 0.501 | Win Rate vs Medio_Bot: 55.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 468,000 | Tempo: 1.0s | Epsilon: 0.053
+  Recompensa Média: 0.224 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 469,000 | Tempo: 0.9s | Epsilon: 0.053
+  Recompensa Média: 0.312 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 470,000 | Tempo: 0.9s | Epsilon: 0.053
+  Recompensa Média: 0.234 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 471,000 | Tempo: 1.0s | Epsilon: 0.053
+  Recompensa Média: 0.364 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 472,000 | Tempo: 1.0s | Epsilon: 0.053
+  Recompensa Média: 0.106 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 473,000 | Tempo: 1.0s | Epsilon: 0.053
+  Recompensa Média: 0.172 | Win Rate vs Medio_Bot: 60.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 474,000 | Tempo: 0.9s | Epsilon: 0.053
+  Recompensa Média: 0.162 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 475,000 | Tempo: 0.9s | Epsilon: 0.053
+  Recompensa Média: 0.127 | Win Rate vs Medio_Bot: 39.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 476,000 | Tempo: 1.0s | Epsilon: 0.053
+  Recompensa Média: 0.040 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 477,000 | Tempo: 1.0s | Epsilon: 0.052
+  Recompensa Média: -0.030 | Win Rate vs Medio_Bot: 45.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 478,000 | Tempo: 0.9s | Epsilon: 0.052
+  Recompensa Média: 0.169 | Win Rate vs Medio_Bot: 44.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 479,000 | Tempo: 0.9s | Epsilon: 0.052
+  Recompensa Média: 0.352 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 480,000 | Tempo: 0.9s | Epsilon: 0.052
+  Recompensa Média: 0.298 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 481,000 | Tempo: 0.9s | Epsilon: 0.052
+  Recompensa Média: 0.135 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 482,000 | Tempo: 1.0s | Epsilon: 0.052
+  Recompensa Média: 0.183 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 483,000 | Tempo: 0.9s | Epsilon: 0.052
+  Recompensa Média: 0.271 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 484,000 | Tempo: 1.0s | Epsilon: 0.052
+  Recompensa Média: 0.117 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 485,000 | Tempo: 0.9s | Epsilon: 0.052
+  Recompensa Média: 0.199 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 486,000 | Tempo: 1.0s | Epsilon: 0.052
+  Recompensa Média: -0.080 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 487,000 | Tempo: 1.0s | Epsilon: 0.051
+  Recompensa Média: -0.035 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 488,000 | Tempo: 1.1s | Epsilon: 0.051
+  Recompensa Média: 0.343 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 489,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.008 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 490,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.385 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 491,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.111 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 492,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.296 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 493,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.392 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 494,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.410 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 495,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.411 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 496,000 | Tempo: 0.9s | Epsilon: 0.051
+  Recompensa Média: 0.608 | Win Rate vs Medio_Bot: 49.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 497,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.467 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 498,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.827 | Win Rate vs Medio_Bot: 43.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 499,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.025 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 500,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.805 | Win Rate vs Medio_Bot: 46.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 501,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.351 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 502,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.294 | Win Rate vs Medio_Bot: 38.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 503,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.242 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 504,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.354 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 505,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.074 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 506,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.160 | Win Rate vs Medio_Bot: 62.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 507,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.140 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 508,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.410 | Win Rate vs Medio_Bot: 52.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 509,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.081 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 510,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: -0.001 | Win Rate vs Medio_Bot: 48.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 511,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: -0.041 | Win Rate vs Medio_Bot: 42.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 512,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: -0.164 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 513,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.359 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 514,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.790 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 515,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.292 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 516,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.427 | Win Rate vs Medio_Bot: 47.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 517,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.164 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 518,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: -0.042 | Win Rate vs Medio_Bot: 37.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 519,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.414 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 520,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.150 | Win Rate vs Medio_Bot: 53.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 521,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.257 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 522,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.193 | Win Rate vs Medio_Bot: 54.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 523,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: -0.187 | Win Rate vs Medio_Bot: 41.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 524,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.309 | Win Rate vs Medio_Bot: 57.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 525,000 | Tempo: 0.9s | Epsilon: 0.050
+  Recompensa Média: 0.213 | Win Rate vs Medio_Bot: 58.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 526,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.374 | Win Rate vs Medio_Bot: 51.0%
+  Estados: 3,184
+[RLBot] Q-table salva em /home/ubuntu/Projeto_IntegradorVI-main/backend/rl_training/../../../rl_q_table_massive_v2.json
+Episódios: 527,000 | Tempo: 1.0s | Epsilon: 0.050
+  Recompensa Média: 0.129 | Win Rate vs Medio_Bot: 50.0%
+  Estados: 3,184
