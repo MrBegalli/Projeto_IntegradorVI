@@ -45,7 +45,13 @@ O script `continuous_retrain.py` foi configurado para iniciar o treinamento e ge
 2.  Execute o script a partir do diretório raiz do projeto:
 
 ```bash
-python3 rl_training/continuous_retrain.py
+python manage.py train --episodes 10000
+```
+
+3. Continaur treinamento do modelo
+
+```bash
+python manage.py train --episodes 10000 --model data/dqn_model.pth
 ```
 
 **Observações sobre o Treinamento:**
