@@ -3,105 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Trunfo IA - Carros</title>
+    <title>Super Trunfo Retro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-4">
+<body class="text-white min-h-screen flex flex-col items-center p-4">
 
-    <!-- Cabeçalho -->
     <div class="text-center mb-6">
-        <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-2 retro-title">
-            SUPER TRUNFO IA
-        </h1>
-        <p class="text-lg text-gray-400">Carros Esportivos</p>
-        <p id="gameStatus" class="text-sm text-green-400 mt-2">
-            Carregando...
-        </p>
+        <h1 class="text-3xl md:text-4xl font-bold text-red-600 mb-2" style="font-family: 'Press Start 2P', cursive; text-shadow: 2px 2px #000;">SUPER TRUNFO RETRO</h1>
+        <p id="gameStatus" class="text-sm text-green-400">Analise o baralho e clique em "Começar Jogo" para iniciar!</p>
+        <button id="startGameBtn" class="mt-4 px-6 py-3 inline-block">Começar Jogo</button>
     </div>
 
-    <!-- Botão Iniciar -->
-    <div id="startSection" class="text-center">
-        <button id="startGameBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all">
-            Começar Jogo
-        </button>
+    <div id="fullDeckContainer" class="flex flex-col items-center">
+        <h2 class="text-xl mb-4">BARALHO COMPLETO</h2>
+        <div id="fullDeckGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-center">
+        </div>
     </div>
-
-    <!-- Menu de Dificuldade -->
+    
     <div id="difficultyMenu" class="hidden text-center mt-8">
         <h2 class="text-2xl mb-6 text-yellow-400">Selecione a Dificuldade</h2>
-        <div class="flex flex-col md:flex-row gap-4">
-            <button class="difficulty-btn bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold" data-difficulty="fácil">
-                FÁCIL
-            </button>
-            <button class="difficulty-btn bg-yellow-600 hover:bg-yellow-700 px-8 py-4 rounded-lg font-bold" data-difficulty="médio">
-                MÉDIO
-            </button>
-            <button class="difficulty-btn bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg font-bold" data-difficulty="difícil">
-                DIFÍCIL
-            </button>
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="fácil">FÁCIL</button>
+                <span class="difficulty-desc text-xs mt-4 text-green-400" data-difficulty="fácil">Bot aleatório com escolhas simples</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="médio">MÉDIO</button>
+                <span class="difficulty-desc text-xs mt-4 text-yellow-400" data-difficulty="médio">Bot com estratégia ponderada</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="difícil">DIFÍCIL</button>
+                <span class="difficulty-desc text-xs mt-4 text-red-400" data-difficulty="difícil">Bot com IA avançada (DQN)</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="difficulty-btn px-8 py-4" data-difficulty="impossível">IMPOSSÍVEL</button>
+                <span class="difficulty-desc text-xs mt-4 text-purple-400" data-difficulty="impossível">Bot com busca em árvore (MCTS)</span>
+            </div>
         </div>
     </div>
+    
+    <div id="gameContainer" class="hidden w-full flex flex-col items-center">
+        <div class="flex justify-around w-full max-w-2xl mb-6">
+            <div class="score-box">
+                <p class="text-sm">VOCÊ</p>
+                <span id="playerScore" class="text-2xl text-green-500 font-bold">0</span>
+                <p class="text-xs">Cartas: <span id="playerDeckCount">0</span></p>
+            </div>
+            <div class="score-box">
+                <p class="text-sm">IA</p>
+                <span id="aiScore" class="text-2xl text-red-500 font-bold">0</span>
+                <p class="text-xs">Cartas: <span id="aiDeckCount">0</span></p>
+            </div>
+        </div>
 
-    <!-- Container do Jogo -->
-    <div id="gameContainer" class="hidden w-full max-w-6xl">
+        <h3 class="text-lg text-green-400 mb-2">SEU DECK (Clique para escolher):</h3>
+        <div id="playerDeckContainer" class="flex flex-wrap justify-center gap-2 mb-6 max-w-4xl">
+        </div>
         
-        <!-- Placar -->
-        <div class="flex justify-around mb-6">
-            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                <p class="text-sm text-gray-400">VOCÊ</p>
-                <span id="playerScore" class="text-3xl text-green-500 font-bold">0</span>
-                <p class="text-xs text-gray-500 mt-1">Cartas: <span id="playerDeckCount">0</span></p>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg text-center">
-                <p class="text-sm text-gray-400">IA</p>
-                <span id="aiScore" class="text-3xl text-red-500 font-bold">0</span>
-                <p class="text-xs text-gray-500 mt-1">Cartas: <span id="aiDeckCount">0</span></p>
-            </div>
-        </div>
+        <div id="resultMessage" class="text-center text-lg md:text-xl font-bold mb-4" style="min-height: 2rem;"></div>
 
-        <!-- Mensagem de Resultado -->
-        <div id="resultMessage" class="text-center text-xl font-bold mb-4 h-8"></div>
+        <button id="confirmCardBtn" class="hidden px-6 py-3 mb-4" disabled>Escolher Carta</button>
 
-        <!-- Deck do Jogador -->
-        <div class="mb-6">
-            <h3 class="text-lg text-green-400 mb-2 text-center">SEU DECK (Clique para selecionar)</h3>
-            <div id="playerDeckContainer" class="flex flex-wrap justify-center gap-2"></div>
-        </div>
-
-        <!-- Cartas em Jogo -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            
-            <!-- Carta do Jogador -->
-            <div class="bg-gray-800 rounded-lg p-6">
-                <h3 class="text-center text-green-400 font-bold mb-4">SUA CARTA</h3>
-                <div id="playerCardDisplay" class="text-center">
-                    <p class="text-gray-500">Selecione uma carta</p>
+        <div class="w-full flex justify-center flex-wrap">
+            <div id="playerCardContainer" class="card-container">
+                <div id="playerCard" class="flip-card">
+                    <div class="card-back absolute inset-0 p-6 flex flex-col items-center justify-center">
+                        <h2 class="text-lg font-bold text-green-400">JOGADOR</h2>
+                        <div class="text-gray-400 mt-4 text-center">SELECIONE SUA CARTA</div>
+                    </div>
+                    <div class="card-front absolute inset-0 p-6 flex flex-col items-center">
+                        <h2 class="text-sm font-bold text-red-400 mb-2" id="playerCardName">Nome do Carro</h2>
+                        <img id="playerCardImage" src="https://placehold.co/200x120/000000/FF0000?text=Carro" alt="Imagem do seu carro" class="mb-4" style="image-rendering: pixelated;">
+                        <ul class="w-full text-left space-y-2 text-green-400 text-xs" id="playerAttributes"></ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Carta da IA -->
-            <div class="bg-gray-800 rounded-lg p-6">
-                <h3 class="text-center text-red-400 font-bold mb-4">CARTA DA IA</h3>
-                <div id="aiCardDisplay" class="text-center">
-                    <p class="text-gray-500">Aguardando...</p>
+            <div id="aiCardContainer" class="card-container">
+                <div id="aiCard" class="flip-card flipped">
+                    <div class="card-back absolute inset-0 p-6 flex flex-col items-center justify-center">
+                        <h2 class="text-lg font-bold text-red-400">IA</h2>
+                        <div class="text-gray-400 mt-4 text-center">ESPERANDO ESCOLHA</div>
+                    </div>
+                    <div class="card-front absolute inset-0 p-6 flex flex-col items-center">
+                        <h2 class="text-sm font-bold text-red-400 mb-2" id="aiCardName">?</h2>
+                        <img id="aiCardImage" src="https://placehold.co/200x120/000000/FF0000?text=???" alt="Imagem da IA" class="mb-4" style="image-rendering: pixelated;">
+                        <ul class="w-full text-left space-y-2 text-green-400 text-xs">
+                            <li class="attribute-item text-green-400" id="aiHP">POTÊNCIA: <span class="font-semibold">?</span></li>
+                            <li class="attribute-item text-green-400" id="aiTorque">TORQUE: <span class="font-semibold">?</span></li>
+                            <li class="attribute-item text-green-400" id="aiWeight">PESO: <span class="font-semibold">?</span></li>
+                            <li class="attribute-item text-green-400" id="ai0100">0-100: <span class="font-semibold">?</span></li>
+                            <li class="attribute-item text-green-400" id="aiTopSpeed">VEL. MÁX: <span class="font-semibold">?</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </div>
-
-        <!-- Botão de Jogar -->
-        <div class="text-center">
-            <button id="playButton" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>
-                Jogar Rodada
-            </button>
-        </div>
-
-    </div>
-
-    <!-- Rodapé -->
-    <div class="mt-8 text-center text-gray-500 text-sm">
-        <p>Super Trunfo IA v1.0 | Projeto Integrador VI</p>
     </div>
 
     <script src="js/api.js"></script>

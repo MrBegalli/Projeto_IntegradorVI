@@ -1,5 +1,5 @@
 /**
- * Lógica do jogo Super Trunfo - Frontend.
+ * Lógica do jogo Super Trunfo - Frontend Retro.
  */
 
 // Estado do jogo
@@ -9,34 +9,41 @@ let gameState = {
     selectedCard: null,
     selectedAttribute: null,
     difficulty: null,
-    isPlaying: false
+    isPlaying: false,
+    fullDeck: []
 };
 
 // Mapeamento de atributos para exibição
 const ATTRIBUTE_NAMES = {
-    'HP': 'Potência (HP)',
-    'torque': 'Torque (Nm)',
-    'weight': 'Peso (kg)',
-    '0-100': '0-100 km/h (s)',
-    'top_speed': 'Velocidade Máxima (km/h)'
+    'HP': 'POTÊNCIA',
+    'torque': 'TORQUE',
+    'weight': 'PESO',
+    '0-100': '0-100',
+    'top_speed': 'VEL. MÁX'
 };
 
 // Elementos do DOM
 const elements = {
     gameStatus: document.getElementById('gameStatus'),
-    startSection: document.getElementById('startSection'),
     startGameBtn: document.getElementById('startGameBtn'),
+    fullDeckContainer: document.getElementById('fullDeckContainer'),
+    fullDeckGrid: document.getElementById('fullDeckGrid'),
     difficultyMenu: document.getElementById('difficultyMenu'),
     gameContainer: document.getElementById('gameContainer'),
     playerDeckContainer: document.getElementById('playerDeckContainer'),
-    playerCardDisplay: document.getElementById('playerCardDisplay'),
-    aiCardDisplay: document.getElementById('aiCardDisplay'),
+    playerCard: document.getElementById('playerCard'),
+    aiCard: document.getElementById('aiCard'),
+    playerCardName: document.getElementById('playerCardName'),
+    playerCardImage: document.getElementById('playerCardImage'),
+    playerAttributes: document.getElementById('playerAttributes'),
+    aiCardName: document.getElementById('aiCardName'),
+    aiCardImage: document.getElementById('aiCardImage'),
     playerScore: document.getElementById('playerScore'),
     aiScore: document.getElementById('aiScore'),
     playerDeckCount: document.getElementById('playerDeckCount'),
     aiDeckCount: document.getElementById('aiDeckCount'),
     resultMessage: document.getElementById('resultMessage'),
-    playButton: document.getElementById('playButton')
+    confirmCardBtn: document.getElementById('confirmCardBtn')
 };
 
 /**
@@ -48,7 +55,13 @@ async function init() {
         const health = await api.health();
         console.log('API Status:', health);
         
-        elements.gameStatus.textContent = 'Pronto para jogar!';
+        // Carrega baralho completo
+        const deckResponse = await api.getDeck();
+        gameState.fullDeck = deckResponse.cards || deckResponse;
+        
+        renderFullDeck();
+        
+        elements.gameStatus.textContent = 'Analise o baralho e clique em "Começar Jogo" para iniciar!';
         
         // Event listeners
         elements.startGameBtn.addEventListener('click', showDifficultyMenu);
@@ -60,7 +73,7 @@ async function init() {
             });
         });
         
-        elements.playButton.addEventListener('click', playRound);
+        elements.confirmCardBtn.addEventListener('click', playRound);
         
     } catch (error) {
         console.error('Erro ao inicializar:', error);
@@ -70,10 +83,37 @@ async function init() {
 }
 
 /**
+ * Renderiza o baralho completo.
+ */
+function renderFullDeck() {
+    elements.fullDeckGrid.innerHTML = '';
+    
+    gameState.fullDeck.forEach(card => {
+        const cardEl = document.createElement('div');
+        cardEl.className = 'deck-view-card';
+        
+        cardEl.innerHTML = `
+            <h3 class="text-xs font-bold text-red-400 mb-2 text-center">${card.name}</h3>
+            <p class="text-xs text-gray-400 text-center mb-2">${card.brand} (${card.year})</p>
+            <div class="text-xs text-green-400 space-y-1">
+                <div>HP: ${Math.round(card.HP)}</div>
+                <div>Torque: ${Math.round(card.torque)} Nm</div>
+                <div>Peso: ${Math.round(card.weight)} kg</div>
+                <div>0-100: ${card['0-100'].toFixed(1)}s</div>
+                <div>Vel. Máx: ${Math.round(card.top_speed)} km/h</div>
+            </div>
+        `;
+        
+        elements.fullDeckGrid.appendChild(cardEl);
+    });
+}
+
+/**
  * Mostra menu de dificuldade.
  */
 function showDifficultyMenu() {
-    elements.startSection.classList.add('hidden');
+    elements.fullDeckContainer.classList.add('hidden');
+    elements.startGameBtn.classList.add('hidden');
     elements.difficultyMenu.classList.remove('hidden');
     elements.gameStatus.textContent = 'Escolha o nível de dificuldade';
 }
@@ -118,16 +158,11 @@ function renderPlayerDeck() {
     
     gameState.playerDeck.forEach(card => {
         const cardEl = document.createElement('div');
-        cardEl.className = `
-            bg-gray-700 p-2 rounded cursor-pointer hover:bg-gray-600 
-            transition-all border-2 border-transparent
-            ${gameState.selectedCard?.id === card.id ? 'border-green-400 bg-gray-600' : ''}
-        `;
-        cardEl.style.minWidth = '120px';
+        cardEl.className = `player-deck-card ${gameState.selectedCard?.id === card.id ? 'selected-deck-card' : ''}`;
         
         cardEl.innerHTML = `
-            <p class="text-xs font-bold text-center mb-1">${card.name}</p>
-            <p class="text-xs text-gray-400 text-center">${card.brand}</p>
+            <p class="card-name-short text-green-400 mb-1">${card.name}</p>
+            <p class="text-gray-400" style="font-size: 6px;">${card.brand}</p>
         `;
         
         cardEl.addEventListener('click', () => selectCard(card));
@@ -146,32 +181,43 @@ function selectCard(card) {
     renderPlayerDeck();
     displayPlayerCard(card);
     
+    // Mostra botão de confirmação
+    elements.confirmCardBtn.classList.remove('hidden');
+    elements.confirmCardBtn.disabled = true;
+    
+    // Remove flip da carta do jogador
+    elements.playerCard.classList.remove('flipped');
+    
     elements.gameStatus.textContent = 'Carta selecionada! Escolha um atributo.';
-    elements.playButton.disabled = true;
 }
 
 /**
  * Exibe a carta do jogador.
  */
 function displayPlayerCard(card) {
-    elements.playerCardDisplay.innerHTML = `
-        <h4 class="text-xl font-bold mb-2">${card.name}</h4>
-        <p class="text-sm text-gray-400 mb-4">${card.brand} (${card.year})</p>
-        <div class="space-y-2">
-            ${Object.keys(ATTRIBUTE_NAMES).map(attr => `
-                <div class="attribute-option bg-gray-700 p-3 rounded cursor-pointer hover:bg-gray-600 transition-all ${gameState.selectedAttribute === attr ? 'bg-blue-600' : ''}"
-                     data-attribute="${attr}">
-                    <div class="flex justify-between">
-                        <span class="text-sm">${ATTRIBUTE_NAMES[attr]}</span>
-                        <span class="font-bold">${formatAttributeValue(card[attr], attr)}</span>
-                    </div>
-                </div>
-            `).join('')}
-        </div>
+    elements.playerCardName.textContent = card.name;
+    elements.playerCardImage.src = `https://placehold.co/200x120/000000/FF0000?text=${encodeURIComponent(card.brand)}`;
+    
+    elements.playerAttributes.innerHTML = `
+        <li class="attribute-item" data-attribute="HP">
+            ${ATTRIBUTE_NAMES['HP']}: <span class="font-semibold">${Math.round(card.HP)}</span>
+        </li>
+        <li class="attribute-item" data-attribute="torque">
+            ${ATTRIBUTE_NAMES['torque']}: <span class="font-semibold">${Math.round(card.torque)} Nm</span>
+        </li>
+        <li class="attribute-item" data-attribute="weight">
+            ${ATTRIBUTE_NAMES['weight']}: <span class="font-semibold">${Math.round(card.weight)} kg</span>
+        </li>
+        <li class="attribute-item" data-attribute="0-100">
+            ${ATTRIBUTE_NAMES['0-100']}: <span class="font-semibold">${card['0-100'].toFixed(1)}s</span>
+        </li>
+        <li class="attribute-item" data-attribute="top_speed">
+            ${ATTRIBUTE_NAMES['top_speed']}: <span class="font-semibold">${Math.round(card.top_speed)} km/h</span>
+        </li>
     `;
     
     // Event listeners para atributos
-    document.querySelectorAll('.attribute-option').forEach(el => {
+    document.querySelectorAll('.attribute-item').forEach(el => {
         el.addEventListener('click', () => {
             const attr = el.dataset.attribute;
             selectAttribute(attr);
@@ -186,18 +232,16 @@ function selectAttribute(attribute) {
     gameState.selectedAttribute = attribute;
     
     // Atualiza UI
-    document.querySelectorAll('.attribute-option').forEach(el => {
+    document.querySelectorAll('.attribute-item').forEach(el => {
         if (el.dataset.attribute === attribute) {
-            el.classList.add('bg-blue-600');
-            el.classList.remove('bg-gray-700');
+            el.classList.add('selected');
         } else {
-            el.classList.remove('bg-blue-600');
-            el.classList.add('bg-gray-700');
+            el.classList.remove('selected');
         }
     });
     
     elements.gameStatus.textContent = `Atributo selecionado: ${ATTRIBUTE_NAMES[attribute]}`;
-    elements.playButton.disabled = false;
+    elements.confirmCardBtn.disabled = false;
 }
 
 /**
@@ -210,7 +254,7 @@ async function playRound() {
     }
     
     try {
-        elements.playButton.disabled = true;
+        elements.confirmCardBtn.disabled = true;
         elements.gameStatus.textContent = 'Jogando rodada...';
         
         // Chama API
@@ -230,26 +274,33 @@ async function playRound() {
         if (response.game_over) {
             endGame(response.game_winner);
         } else {
-            // Atualiza deck do jogador
-            const status = await api.getGameStatus(gameState.gameId);
-            gameState.playerDeck = status.current_player_deck;
-            
-            // Reseta seleção
-            gameState.selectedCard = null;
-            gameState.selectedAttribute = null;
-            
-            renderPlayerDeck();
-            elements.playerCardDisplay.innerHTML = '<p class="text-gray-500">Selecione uma carta</p>';
-            elements.aiCardDisplay.innerHTML = '<p class="text-gray-500">Aguardando...</p>';
-            
-            elements.gameStatus.textContent = 'Selecione sua próxima carta';
+            // Aguarda 3 segundos antes de preparar próxima rodada
+            setTimeout(async () => {
+                // Atualiza deck do jogador
+                const status = await api.getGameStatus(gameState.gameId);
+                gameState.playerDeck = status.current_player_deck;
+                
+                // Reseta seleção
+                gameState.selectedCard = null;
+                gameState.selectedAttribute = null;
+                
+                renderPlayerDeck();
+                
+                // Reseta cartas
+                elements.playerCard.classList.add('flipped');
+                elements.aiCard.classList.add('flipped');
+                elements.confirmCardBtn.classList.add('hidden');
+                elements.resultMessage.textContent = '';
+                
+                elements.gameStatus.textContent = 'Selecione sua próxima carta';
+            }, 3000);
         }
         
     } catch (error) {
         console.error('Erro ao jogar rodada:', error);
         elements.gameStatus.textContent = `Erro: ${error.message}`;
         elements.gameStatus.classList.add('text-red-500');
-        elements.playButton.disabled = false;
+        elements.confirmCardBtn.disabled = false;
     }
 }
 
@@ -259,34 +310,45 @@ async function playRound() {
 function displayRoundResult(response) {
     const result = response.round_result;
     
+    // Vira a carta da IA
+    elements.aiCard.classList.remove('flipped');
+    
     // Exibe carta da IA
-    elements.aiCardDisplay.innerHTML = `
-        <h4 class="text-xl font-bold mb-2">${result.ai_card.name}</h4>
-        <p class="text-sm text-gray-400 mb-4">${result.ai_card.brand} (${result.ai_card.year})</p>
-        <div class="space-y-2">
-            ${Object.keys(ATTRIBUTE_NAMES).map(attr => `
-                <div class="bg-gray-700 p-3 rounded ${attr === result.attribute ? 'border-2 border-yellow-400' : ''}">
-                    <div class="flex justify-between">
-                        <span class="text-sm">${ATTRIBUTE_NAMES[attr]}</span>
-                        <span class="font-bold">${formatAttributeValue(result.ai_card[attr], attr)}</span>
-                    </div>
-                </div>
-            `).join('')}
-        </div>
-    `;
+    elements.aiCardName.textContent = result.ai_card.name;
+    elements.aiCardImage.src = `https://placehold.co/200x120/000000/FF0000?text=${encodeURIComponent(result.ai_card.brand)}`;
+    
+    // Atualiza atributos da IA
+    document.getElementById('aiHP').innerHTML = `POTÊNCIA: <span class="font-semibold">${Math.round(result.ai_card.HP)}</span>`;
+    document.getElementById('aiTorque').innerHTML = `TORQUE: <span class="font-semibold">${Math.round(result.ai_card.torque)} Nm</span>`;
+    document.getElementById('aiWeight').innerHTML = `PESO: <span class="font-semibold">${Math.round(result.ai_card.weight)} kg</span>`;
+    document.getElementById('ai0100').innerHTML = `0-100: <span class="font-semibold">${result.ai_card['0-100'].toFixed(1)}s</span>`;
+    document.getElementById('aiTopSpeed').innerHTML = `VEL. MÁX: <span class="font-semibold">${Math.round(result.ai_card.top_speed)} km/h</span>`;
+    
+    // Destaca atributos comparados
+    document.querySelectorAll('.attribute-item').forEach(el => {
+        if (el.dataset.attribute === result.attribute) {
+            if (result.winner === 'player') {
+                el.classList.add('winner');
+                el.classList.remove('loser');
+            } else if (result.winner === 'ai') {
+                el.classList.add('loser');
+                el.classList.remove('winner');
+            }
+        }
+    });
     
     // Mensagem de resultado
     let messageClass = '';
     if (result.winner === 'player') {
-        messageClass = 'text-green-400';
+        messageClass = 'text-green-500';
     } else if (result.winner === 'ai') {
-        messageClass = 'text-red-400';
+        messageClass = 'text-red-500';
     } else {
         messageClass = 'text-yellow-400';
     }
     
     elements.resultMessage.textContent = result.message;
-    elements.resultMessage.className = `text-center text-xl font-bold mb-4 h-8 ${messageClass}`;
+    elements.resultMessage.className = `text-center text-lg md:text-xl font-bold mb-4 ${messageClass}`;
 }
 
 /**
@@ -321,10 +383,10 @@ function endGame(winner) {
     
     if (winner === 'player') {
         message = '🎉 VOCÊ VENCEU! 🎉';
-        messageClass = 'text-green-400';
+        messageClass = 'text-green-500';
     } else if (winner === 'ai') {
         message = '😢 A IA VENCEU! 😢';
-        messageClass = 'text-red-400';
+        messageClass = 'text-red-500';
     } else {
         message = '🤝 EMPATE! 🤝';
         messageClass = 'text-yellow-400';
@@ -333,24 +395,10 @@ function endGame(winner) {
     elements.gameStatus.textContent = message;
     elements.gameStatus.className = `text-2xl font-bold ${messageClass}`;
     
-    elements.playButton.textContent = 'Jogar Novamente';
-    elements.playButton.disabled = false;
-    elements.playButton.onclick = () => location.reload();
-}
-
-/**
- * Formata valor de atributo para exibição.
- */
-function formatAttributeValue(value, attribute) {
-    if (attribute === '0-100') {
-        return `${value.toFixed(1)}s`;
-    } else if (attribute === 'top_speed') {
-        return `${Math.round(value)} km/h`;
-    } else if (attribute === 'weight') {
-        return `${Math.round(value)} kg`;
-    } else {
-        return Math.round(value);
-    }
+    elements.confirmCardBtn.textContent = 'Jogar Novamente';
+    elements.confirmCardBtn.classList.remove('hidden');
+    elements.confirmCardBtn.disabled = false;
+    elements.confirmCardBtn.onclick = () => location.reload();
 }
 
 // Inicializa quando o DOM estiver pronto

@@ -1,156 +1,145 @@
-# Super Trunfo IA - Carros Esportivos
+# Super Trunfo Retro - Projeto Integrador VI
 
-Este projeto implementa o clássico jogo Super Trunfo com uma interface web moderna e um backend robusto que utiliza Inteligência Artificial para os oponentes. A aplicação foi totalmente reestruturada para separar o frontend do backend, introduzir uma API RESTful e corrigir bugs, resultando em um sistema modular, escalável e funcional.
+Projeto de jogo Super Trunfo com tema de carros esportivos, desenvolvido com frontend estilo retro/pixel art e backend com inteligência artificial.
 
-O jogo utiliza um baralho de carros esportivos, carregado a partir de um arquivo `carros.json`, e permite ao jogador enfrentar bots com três níveis de dificuldade distintos.
+## 📋 Descrição
 
----
+Este projeto implementa o clássico jogo de cartas Super Trunfo com uma interface visual retrô e sistema de IA com diferentes níveis de dificuldade. O jogador compete contra bots que utilizam diferentes estratégias, desde escolhas aleatórias até redes neurais profundas (DQN) e busca em árvore Monte Carlo (MCTS).
 
-## ✨ Features
-
-- **Interface Web Moderna**: Frontend construído com HTML, CSS e JavaScript puro, utilizando Tailwind CSS para um design responsivo e agradável.
-- **Backend com API REST**: Servidor backend desenvolvido com FastAPI (Python) que expõe endpoints para toda a lógica do jogo.
-- **Três Níveis de Dificuldade**: Jogue contra bots com estratégias diferentes:
-    - **Fácil**: Um bot com heurística simples baseada em pesos (`WeightedBot`).
-    - **Médio**: Um bot que utiliza Monte Carlo Tree Search (MCTS) para simular jogadas (`MCTSBot`).
-    - **Difícil**: Um bot que emprega Reinforcement Learning (Q-Learning) para aprender e aplicar estratégias avançadas (`RLBot`).
-- **Gerenciamento de Sessão**: O backend gerencia múltiplas sessões de jogo simultaneamente, com expiração automática de sessões inativas.
-- **Código Reorganizado e Otimizado**: A base de código foi completamente refatorada, com separação de responsabilidades, correção de bugs e documentação aprimorada.
-
----
-
-## 🚀 Arquitetura
-
-O projeto foi dividido em duas partes principais: **Frontend** e **Backend**, que se comunicam através de uma API REST.
-
-### Backend
-
-Construído em Python com o framework **FastAPI**, o backend é responsável por:
-
-- Gerenciar as sessões de jogo.
-- Carregar e distribuir as cartas do baralho.
-- Implementar a lógica do jogo e a tomada de decisão dos bots.
-- Expor endpoints para o frontend consumir.
+## 🎮 Características
 
 ### Frontend
+- **Estilo Visual Retro**: Interface inspirada em jogos clássicos com fonte pixelada (Press Start 2P)
+- **Background Temático**: Imagem de fundo personalizada com tema automotivo
+- **Sistema de Cartas Flip**: Animações de virada de cartas com efeito 3D
+- **Visualização do Baralho**: Possibilidade de ver todas as cartas antes de iniciar
+- **Design Responsivo**: Adaptável para diferentes tamanhos de tela
 
-Desenvolvido com **HTML5, CSS3 e JavaScript (ES6+)**, o frontend é uma aplicação de página única (SPA) que:
+### Backend
+- **API RESTful**: Desenvolvida com FastAPI
+- **Múltiplos Níveis de Dificuldade**:
+  - **Fácil**: Bot com escolhas aleatórias
+  - **Médio**: Bot com estratégia ponderada
+  - **Difícil**: Bot com busca em árvore Monte Carlo (MCTS)
+  - **Impossível**: Bot com IA avançada (Deep Q-Network - DQN)
+- **Sistema de Pontuação**: Acompanhamento de vitórias e cartas restantes
+- **Gerenciamento de Sessões**: Múltiplas partidas simultâneas
 
-- Consome a API do backend para obter dados e executar ações.
-- Renderiza a interface do jogo, incluindo o placar, as cartas e os resultados.
-- Gerencia o estado da interface e a interação do usuário.
-
-| Componente      | Tecnologia Principal | Responsabilidade                                      |
-| --------------- | -------------------- | ----------------------------------------------------- |
-| **Backend**     | FastAPI (Python)     | Lógica do jogo, IA dos bots, gerenciamento de sessão  |
-| **Frontend**    | JavaScript (Puro)    | Interface do usuário, interação, consumo da API       |
-| **Estilização** | Tailwind CSS         | Design responsivo e moderno                           |
-| **Comunicação** | API REST (JSON)      | Troca de dados entre frontend e backend               |
-
----
-
-## 📂 Estrutura do Projeto
-
-A estrutura de diretórios foi organizada para refletir a separação entre frontend e backend:
-
-```
-supertrunfo_ia/
-├── backend/
-│   ├── app/                # Lógica principal da aplicação FastAPI
-│   │   ├── __init__.py
-│   │   ├── deck_loader.py    # Carregador do baralho
-│   │   ├── game_manager.py   # Gerenciador de sessões
-│   │   ├── main.py           # Endpoints da API
-│   │   ├── models.py         # Modelos Pydantic
-│   │   └── utils.py          # Funções auxiliares
-│   ├── bots/               # Implementação dos bots de IA
-│   │   ├── __init__.py
-│   │   ├── mcts_bot.py
-│   │   ├── rl_bot.py
-│   │   └── weighted_bot.py
-│   ├── data/
-│   │   └── carros.json       # Baralho do jogo
-│   └── requirements.txt    # Dependências Python
-├── frontend/
-│   └── public/
-│       ├── css/style.css
-│       ├── index.html
-│       └── js/
-│           ├── api.js        # Módulo de comunicação com a API
-│           └── game.js       # Lógica do jogo no frontend
-└── README.md
-```
-
----
-
-## 🛠️ Como Executar Localmente
-
-Para rodar o projeto em sua máquina local, siga os passos abaixo.
+## 🚀 Como Executar (Windows)
 
 ### Pré-requisitos
 
-- Python 3.9+
-- Um navegador web moderno (Chrome, Firefox, etc.)
+- Python 3.8+ instalado e configurado no PATH
+- Navegador web moderno
 
-### 1. Backend
+### Instalação e Execução
 
-Primeiro, inicie o servidor backend:
-
+1. **Navegar para o diretório do projeto**:
 ```bash
-# 1. Navegue até o diretório do backend
-cd supertrunfo_ia/backend
+cd super_trunfo_final
+```
 
-# 2. (Opcional, recomendado) Crie e ative um ambiente virtual
+2. **Criar e Ativar Ambiente Virtual**:
+```bash
 python -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
-
-# 3. Instale as dependências
-pip install -r requirements.txt
-
-# 4. Inicie o servidor FastAPI
-uvicorn app.main:app --reload
+venv\Scripts\activate
 ```
 
-O servidor backend estará rodando em `http://localhost:8000`.
-
-### 2. Frontend
-
-Em um novo terminal, inicie um servidor web simples para o frontend:
-
+3. **Instalar dependências do backend**:
 ```bash
-# 1. Navegue até o diretório público do frontend
-cd supertrunfo_ia/frontend/public
+cd backend
+pip install -r requirements.txt
+```
+*Nota: O arquivo `requirements.txt` lista as dependências necessárias, incluindo PyTorch (necessário para o bot "Difícil").*
 
-# 2. Inicie um servidor HTTP
-python -m http.server 3000
+4. **Iniciar o servidor backend (Terminal 1)**:
+```bash
+cd backend
+python manage.py serve
+```
+O backend estará rodando em `http://localhost:8000`
+
+5. **Iniciar o servidor frontend (Terminal 2)**:
+*Abra um novo terminal e navegue para o diretório do projeto.*
+```bash
+cd super_trunfo_final\frontend
+python server.py
+```
+O frontend estará acessível em `http://localhost:3000`
+
+6. **Acessar o Jogo**:
+Abra seu navegador e acesse **http://localhost:3000**
+
+## 📁 Estrutura do Projeto
+
+```
+super_trunfo_final/
+├── backend/
+│   ├── app/
+│   │   ├── main.py              # API FastAPI
+│   │   └── ...                  # Outros arquivos do backend
+│   ├── bots/                    # Bots
+│   ├── data/
+│   ├── manage.py                # Script de gerenciamento
+│   └── requirements.txt         # Dependências Python
+├── frontend/
+│   ├── public/
+│   │   ├── css/
+│   │   │   └── style.css        # Estilos retro
+│   │   ├── js/
+│   │   │   ├── api.js           # Cliente da API
+│   │   │   └── game.js          # Lógica do frontend
+│   │   ├── musica/              # Arquivos de áudio (opcional)
+│   │   ├── background_jogo.jpg  # Imagem de fundo
+│   │   └── index.html           # Página principal
+│   └── server.py                # Servidor HTTP simples
+├── API_DOCUMENTATION.md         # Documentação da API
+├── HEADME.md                    # Documentação original
+├── README.md                    # Este arquivo
+├── COMO_EXECUTAR.md             # Guia detalhado de execução
+└── ALTERACOES.md                # Resumo das alterações
 ```
 
-Agora, abra seu navegador e acesse `http://localhost:3000` para jogar.
+## 🎯 Como Jogar
 
----
+1. **Visualize o Baralho**: Ao abrir o jogo, você verá todas as cartas disponíveis
+2. **Inicie o Jogo**: Clique em "Começar Jogo"
+3. **Escolha a Dificuldade**: Selecione o nível de desafio
+4. **Selecione sua Carta**: Clique em uma carta do seu deck
+5. **Escolha o Atributo**: Clique no atributo que você acha que vai vencer
+6. **Confirme a Jogada**: Clique em "Escolher Carta"
+7. **Veja o Resultado**: A carta da IA será revelada e o vencedor da rodada será anunciado
+8. **Continue Jogando**: Repita até que alguém fique sem cartas
 
-## 🔌 Documentação da API
+## 🤖 Inteligência Artificial
 
-O backend FastAPI gera automaticamente uma documentação interativa. Com o servidor rodando, acesse `http://localhost:8000/docs` para ver todos os endpoints, modelos e testá-los diretamente pelo navegador.
+### Bot Fácil (Random)
+Escolhe cartas e atributos aleatoriamente.
 
-### Principais Endpoints
+### Bot Médio (Weighted)
+Utiliza pesos para avaliar os melhores atributos de cada carta.
 
-- `GET /deck`: Retorna o baralho completo de carros.
-- `POST /game/start`: Inicia uma nova partida. Requer um corpo JSON com a dificuldade (ex: `{"difficulty": "médio"}`).
-- `POST /game/{game_id}/play`: Joga uma rodada. Requer o ID da carta e o atributo escolhido.
-- `GET /game/{game_id}/status`: Retorna o estado atual de uma partida.
+### Bot Difícil (DQN)
+Implementa uma rede neural profunda (Deep Q-Network) que aprende através de reinforcement learning.
 
----
+### Bot Impossível (MCTS)
+Utiliza busca em árvore Monte Carlo para simular múltiplas jogadas futuras e escolher a melhor ação.
 
-## 🔮 Possíveis Melhorias
+## 🛠️ Tecnologias Utilizadas
 
-- **Treinamento do RLBot**: Criar um script para treinar o `RLBot` contra si mesmo ou outros bots para gerar um arquivo `rl_q_table.json` mais robusto.
-- **Animações Avançadas**: Adicionar animações mais complexas para a distribuição e resultado das cartas.
-- **Modo Multiplayer**: Implementar um modo de jogo "Jogador vs. Jogador" utilizando WebSockets.
-- **Persistência de Dados**: Salvar o histórico de partidas e estatísticas dos jogadores em um banco de dados.
+### Frontend
+- HTML5
+- CSS3 (com Tailwind CSS via CDN)
+- JavaScript (Vanilla)
+- Google Fonts (Press Start 2P)
 
----
+### Backend
+- Python 3.8+
+- FastAPI
+- PyTorch (para DQN)
+- NumPy
+- Pandas
 
-## ✍️ Autor
+## 📄 Licença
 
-Este projeto foi reorganizado, corrigido e aprimorado por **Manus AI**.
+Este projeto foi desenvolvido para fins educacionais como parte do Projeto Integrador VI.
