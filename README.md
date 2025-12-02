@@ -119,11 +119,11 @@ Escolhe cartas e atributos aleatoriamente.
 ### Bot Médio (Weighted)
 Utiliza pesos para avaliar os melhores atributos de cada carta.
 
-### Bot Difícil (DQN)
-Implementa uma rede neural profunda (Deep Q-Network) que aprende através de reinforcement learning.
-
-### Bot Impossível (MCTS)
+### Bot Difícil (MCTS)
 Utiliza busca em árvore Monte Carlo para simular múltiplas jogadas futuras e escolher a melhor ação.
+
+### Bot Impossível (DQN)
+Implementa uma rede neural profunda (Deep Q-Network) que aprende através de reinforcement learning.
 
 ## 🛠️ Tecnologias Utilizadas
 
