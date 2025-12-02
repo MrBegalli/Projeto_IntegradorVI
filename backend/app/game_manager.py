@@ -243,15 +243,22 @@ class GameManager:
         if difficulty == Difficulty.FACIL:
             return WeightedBot(deck)
         elif difficulty == Difficulty.MEDIO:
-            return MCTSBot(deck, simulations=50)
+            return MCTSBot(deck, simulations=25)
         elif difficulty == Difficulty.DIFICIL:
-            # Tenta carregar modelo DQN se existir
+            return MCTSBot(deck, simulations=50)
+        elif difficulty == Difficulty.IMPOSSIVEL:
+            # Tenta carregar modelo DQN se existir; em caso de erro, usa MCTSBot como fallback
             import os
             qfile = os.path.join(
-                os.path.dirname(__file__), 
+                os.path.dirname(__file__),
                 "..", "data", "dqn_model.pth"
             )
-            return RLBot(deck, STATS, epsilon=0.0, qfile=qfile if os.path.exists(qfile) else None)
+            try:
+                qfile_path = qfile if os.path.exists(qfile) else None
+                return RLBot(deck, STATS, epsilon=0.0, qfile=qfile_path)
+            except Exception:
+                # Falha ao inicializar RLBot (ex: dependências faltando ou arquivo inválido) -> fallback para MCTS
+                return MCTSBot(deck, simulations=100)
         else:
             # Padrão: fácil
             return WeightedBot(deck)
