@@ -76,28 +76,26 @@ Abra seu navegador e acesse **http://localhost:3000**
 super_trunfo_final/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py              # API FastAPI
-│   │   └── ...                  # Outros arquivos do backend
-│   ├── bots/                    # Bots
+│   │   ├── main.py                 # API FastAPI
+│   │   └── ...                     # Outros arquivos do backend
+│   ├── bots/                       # Bots
 │   ├── data/
-│   ├── manage.py                # Script de gerenciamento
-│   └── requirements.txt         # Dependências Python
+│   ├── manage.py                   # Script de gerenciamento
+│   └── requirements.txt            # Dependências Python
 ├── frontend/
 │   ├── public/
 │   │   ├── css/
-│   │   │   └── style.css        # Estilos retro
+│   │   │   └── style.css           # Estilos retro
 │   │   ├── js/
-│   │   │   ├── api.js           # Cliente da API
-│   │   │   └── game.js          # Lógica do frontend
-│   │   ├── musica/              # Arquivos de áudio (opcional)
-│   │   ├── background_jogo.jpg  # Imagem de fundo
-│   │   └── index.html           # Página principal
-│   └── server.py                # Servidor HTTP simples
-├── API_DOCUMENTATION.md         # Documentação da API
-├── HEADME.md                    # Documentação original
-├── README.md                    # Este arquivo
-├── COMO_EXECUTAR.md             # Guia detalhado de execução
-└── ALTERACOES.md                # Resumo das alterações
+│   │   │   ├── api.js              # Cliente da API
+│   │   │   └── game.js             # Lógica do frontend
+│   │   ├── imagens/
+│   │   │   └── background_jogo.jpg # Imagem de fundo
+│   │   ├── musica/                 # Arquivos de áudio (opcional)
+│   │   └── index.html              # Página principal
+│   └── server.py                   # Servidor HTTP simples
+├── API_DOCUMENTATION.md            # Documentação da API
+└──  README.md                      # Este arquivo
 ```
 
 ## 🎯 Como Jogar
