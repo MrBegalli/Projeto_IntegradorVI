@@ -251,7 +251,7 @@ class GameManager:
             import os
             qfile = os.path.join(
                 os.path.dirname(__file__),
-                "..", "data", "dqn_model.pth"
+                "..", "data", "dqn_model_final.pth"
             )
             try:
                 qfile_path = qfile if os.path.exists(qfile) else None

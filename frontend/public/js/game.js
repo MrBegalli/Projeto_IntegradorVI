@@ -13,6 +13,43 @@ let gameState = {
     fullDeck: []
 };
 
+// Mapeamento de IDs de carros para imagens
+const IMAGE_MAP = {
+    1: 'rx-7.jpg',
+    2: 'civic-type-r.jpg',
+    3: 'gt-r-34.jpeg',
+    4: 'supra.jpeg',
+    5: 'mustang.jpeg',
+    6: '911-carrera-gts.jpg',
+    7: 'm3.jpeg',
+    8: 'aventador.jpeg',
+    9: 'tesla-model-s-plaid.jpg',
+    10: 'impreza-wrx-sti.jpeg',
+    11: 'camaro-ss.jpeg',
+    12: 'a45-amg.jpeg',
+    13: 'challenger-hellcat.jpeg',
+    14: 'huracan-evo.jpg',
+    15: 'rs7-sportback.jpg',
+    16: 'corvette-c8.jpg',
+    17: 'golf-r.jpeg',
+    18: 'viper-acr.jpeg',
+    19: 'ferrari-488.jpg',
+    20: 'Koenigsegg-Agera-R.jpeg',
+    21: 'Pagani-Huayra.jpeg',
+    22: 'm5-competition.jpeg',
+    23: 'Aston-Martin-Vantage.jpg',
+    24: 'Chiron-Super-Sport.jpg',
+    25: 'fiat-uno.jpg'
+};
+
+/**
+ * Retorna o caminho da imagem para um carro específico
+ */
+function getCarImage(cardId) {
+    const imageName = IMAGE_MAP[cardId];
+    return imageName ? `images/${imageName}` : `https://placehold.co/200x120/000000/FF0000?text=No+Image`;
+}
+
 // Mapeamento de atributos para exibição
 const ATTRIBUTE_NAMES = {
     'HP': 'POTÊNCIA',
@@ -196,7 +233,7 @@ function selectCard(card) {
  */
 function displayPlayerCard(card) {
     elements.playerCardName.textContent = card.name;
-    elements.playerCardImage.src = `https://placehold.co/200x120/000000/FF0000?text=${encodeURIComponent(card.brand)}`;
+    elements.playerCardImage.src = getCarImage(card.id);
     
     elements.playerAttributes.innerHTML = `
         <li class="attribute-item" data-attribute="HP">
@@ -315,7 +352,7 @@ function displayRoundResult(response) {
     
     // Exibe carta da IA
     elements.aiCardName.textContent = result.ai_card.name;
-    elements.aiCardImage.src = `https://placehold.co/200x120/000000/FF0000?text=${encodeURIComponent(result.ai_card.brand)}`;
+    elements.aiCardImage.src = getCarImage(result.ai_card.id);
     
     // Atualiza atributos da IA
     document.getElementById('aiHP').innerHTML = `POTÊNCIA: <span class="font-semibold">${Math.round(result.ai_card.HP)}</span>`;
