@@ -12,6 +12,7 @@ class Difficulty(str, Enum):
     FACIL = "fácil"
     MEDIO = "médio"
     DIFICIL = "difícil"
+    IMPOSSIVEL = "impossivel"
 
 
 class Card(BaseModel):
